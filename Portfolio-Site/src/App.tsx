@@ -1,7 +1,18 @@
+import Contact from "./components/Contact";
+import Intro from "./components/Intro";
+import Projects from "./components/Projects";
+import Skills from "./components/Skills";
+
 function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold">Hi, I'm Robbie!</h1>
+      <Intro />
+
+      <Skills />
+
+      <Projects />
+
+      <Contact />
     </>
   );
 }
