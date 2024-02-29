@@ -8,7 +8,7 @@ export default {
       "theme-primary": "#3B1F6C",
       "theme-secondary": "#4C2EA9",
       "theme-border": "#792C75",
-      "theme-text": "#544561",
+      "theme-text": "#FAF9F6",
     },
   },
   plugins: [],

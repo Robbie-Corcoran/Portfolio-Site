@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import ComingSoon from "./components/ComingSoon.tsx";
+import Navbar from "./components/Navbar.tsx";
+import App from "./App.tsx";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    {/* <Navbar />
-    <App /> */}
-    <ComingSoon />
+    <Navbar />
+    <App />
   </React.StrictMode>
 );
