@@ -13,8 +13,6 @@ function App() {
       <Projects />
 
       <Contact />
-
-      <h2>Test</h2>
     </>
   );
 }
