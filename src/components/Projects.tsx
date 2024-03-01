@@ -3,7 +3,7 @@ import ProjectsCard from "./ProjectsCard";
 const Projects = () => {
   return (
     <>
-      <div>Projects</div>
+      <div className="mx-2">Projects</div>
       <div className="w-full">
         <ProjectsCard
           title="exampleTitle"
