@@ -4,12 +4,16 @@ const Projects = () => {
   return (
     <>
       <div>Projects</div>
-      <ProjectsCard />
-      <ProjectsCard />
-      <ProjectsCard />
-      <ProjectsCard />
-      <ProjectsCard />
-      <ProjectsCard />
+      <div className="w-full">
+        <div className="border border-theme-primary rounded-sm shadow m-2">
+          <ProjectsCard />
+          <ProjectsCard />
+          <ProjectsCard />
+          <ProjectsCard />
+          <ProjectsCard />
+          <ProjectsCard />
+        </div>
+      </div>
     </>
   );
 };
