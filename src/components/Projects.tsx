@@ -5,15 +5,20 @@ const Projects = () => {
     <>
       <div>Projects</div>
       <div className="w-full">
-        <div className="border border-theme-primary rounded-sm shadow m-2">
-          <ProjectsCard
-            title="exampleTitle"
-            subtitle="exampleSubtitle"
-            description="exampleDescription"
-            previewPath="examplePreviewPath"
-            previewAlt="examplePreviewAlt"
-          />
-        </div>
+        <ProjectsCard
+          title="exampleTitle"
+          subtitle="exampleSubtitle"
+          description="exampleDescription"
+          previewPath="examplePreviewPath"
+          previewAlt="examplePreviewAlt"
+        />
+        <ProjectsCard
+          title="exampleTitle"
+          subtitle="exampleSubtitle"
+          description="exampleDescription"
+          previewPath="examplePreviewPath"
+          previewAlt="examplePreviewAlt"
+        />
       </div>
     </>
   );

@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const Skills = () => {
-  const [activeTab, setActiveTab] = useState("frontend");
+  const [activeTab, setActiveTab] = useState<string>("frontend");
   const handleTabClick = (tabId: string) => {
     setActiveTab(tabId);
   };

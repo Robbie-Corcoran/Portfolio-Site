@@ -14,7 +14,7 @@ const ProjectsCard = ({
   previewAlt,
 }: ProjectsCard) => {
   return (
-    <div>
+    <div className="border border-theme-primary rounded-sm shadow m-2">
       <h1>{title}</h1>
       <h2>{subtitle}</h2>
       <p>{description}</p>
