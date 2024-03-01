@@ -34,6 +34,11 @@ const Intro = () => {
             </p>
             <br />
             <p>
+              Im open to postions as a Frontend, Backend, or Full Stack
+              developer, as well as projects and collabs. Just reach out!
+            </p>
+            <br />
+            <p>
               In the meantime, please feel free to checkout my{" "}
               <a
                 href="https://github.com/Robbie-Corcoran"
