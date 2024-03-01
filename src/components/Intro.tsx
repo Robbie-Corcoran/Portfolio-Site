@@ -3,7 +3,7 @@ const Intro = () => {
     <>
       <div className="flex justify-center items-center py-5 ">
         <img
-          className="rounded-full w-40 h-40"
+          className="rounded-full w-40 h-40 border-theme-primary border-2"
           src="public/portrait.jpg"
           alt="robbie corcoran's portrait"
         ></img>
