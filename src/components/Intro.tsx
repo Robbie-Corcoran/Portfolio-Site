@@ -1,7 +1,7 @@
 const Intro = () => {
   return (
     <>
-      <div className="flex justify-center items-center py-5 ">
+      <div className="flex justify-center items-center pt-24 pb-4">
         <img
           className="rounded-full w-40 h-40 border-theme-primary border-2"
           src="public/portrait.jpg"
