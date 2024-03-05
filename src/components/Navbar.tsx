@@ -16,7 +16,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-theme-primary text-theme-text w-full fixed">
+    <nav className="bg-theme-primary text-theme-text w-full fixed ">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <div className="flex items-center space-x-3">
           <span className="self-center text-2xl font-semibold whitespace-nowrap">
@@ -49,17 +49,17 @@ const Navbar = () => {
           </svg>
         </button>
         <div
-          className={`w-full md:block md:w-auto ${
-            navOpen ? "block " : "hidden"
+          className={`w-full md:block md:w-auto text-white transition-all ${
+            navOpen ? "block" : "hidden"
           }`}
           id="navbar-default"
         >
-          <ul className="font-medium flex flex-col p-4 md:p-0 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
+          <ul className="font-medium flex flex-col p-2 md:p-0 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white gap-2">
             {navItems.map((item) => (
               <li key={item.id}>
                 <a
                   href="#"
-                  className="block md:py-2 md:px-3 text-white md:p-0 text-right"
+                  className="block md:py-2 md:px-3 md:p-0 text-right hover:underline hover:text-slate-200"
                   aria-current="page"
                 >
                   {item.text}
