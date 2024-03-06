@@ -19,6 +19,13 @@ const Projects = () => {
           previewAlt="Trim Bounce Preview"
           projectURL="https://www.trimbounce.com/"
         />
+        <ProjectsCard
+          title="Cocktail Compass"
+          description="Cocktail Compass is an all-in-one bartender's best friend. With the ability to search by name, ingredient and flavour profiles, you'll never be left speachless when the customer doesnt know what they like or want! NB: The full app is currently under re-design & re-construction and may not work as intended."
+          previewPath="public/projects/cocktail-compass/cocktail-compass-preview.png"
+          previewAlt="Cocktail Compass Preview"
+          projectURL="https://cocktail-compass-frontend.vercel.app/"
+        />
       </div>
     </>
   );
