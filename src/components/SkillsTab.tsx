@@ -30,7 +30,6 @@ const SkillsTab: React.FC<SkillsTabType> = ({
           {tabName}
         </button>
       </li>
-      ;
     </>
   );
 };

@@ -12,7 +12,7 @@ const SkillsIcon: React.FC<SkillsIconProps> = ({ fileName, folderName }) => {
       <img
         src={`../../public/skillIcons/${folderName}/${fileName}.svg`}
         alt={`${fileName}`}
-        className="h-10 w-10"
+        className="h-16 w-16 m-2"
       />
     </>
   );

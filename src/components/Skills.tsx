@@ -73,7 +73,7 @@ const Skills = () => {
         <h1 className="p-2">Skills</h1>
         <div className="border border-theme-primary rounded-sm shadow m-2">
           <ul
-            className="flex flex-wrap text-sm font-medium text-center text-gray-500 rounded-t-lg"
+            className="flex flex-wrap border-bottom border-theme-primary rounded-sm shadow text-sm justify-center font-medium text-center text-gray-500 rounded-t-lg"
             id="defaultTab"
             data-tabs-toggle="#defaultTabContent"
             role="tablist"
@@ -118,14 +118,16 @@ const Skills = () => {
               role="tabpanel"
               aria-labelledby="frontend-tab"
             >
-              {frontendSkills?.skills.map((iconName, index) => (
-                <SkillsIcon
-                  key={index}
-                  category="frontend"
-                  fileName={iconName}
-                  folderName="frontend"
-                />
-              ))}
+              <div className="grid grid-cols-2 gap-4 place-items-center">
+                {frontendSkills?.skills.map((iconName, index) => (
+                  <SkillsIcon
+                    key={index}
+                    category="frontend"
+                    fileName={iconName}
+                    folderName="frontend"
+                  />
+                ))}
+              </div>
             </div>
             <div
               className={`p-4 bg-white rounded-lg md:p-8 ${
@@ -135,14 +137,16 @@ const Skills = () => {
               role="tabpanel"
               aria-labelledby="backend-tab"
             >
-              {backendSkills?.skills.map((iconName, index) => (
-                <SkillsIcon
-                  key={index}
-                  category="backend"
-                  fileName={iconName}
-                  folderName="backend"
-                />
-              ))}
+              <div className="grid grid-cols-2 gap-4 place-items-center">
+                {backendSkills?.skills.map((iconName, index) => (
+                  <SkillsIcon
+                    key={index}
+                    category="backend"
+                    fileName={iconName}
+                    folderName="backend"
+                  />
+                ))}
+              </div>
             </div>
             <div
               className={`p-4 bg-white rounded-lg md:p-8 ${
@@ -152,14 +156,16 @@ const Skills = () => {
               role="tabpanel"
               aria-labelledby="databasing-tab"
             >
-              {databasingSkills?.skills.map((iconName, index) => (
-                <SkillsIcon
-                  key={index}
-                  category="databasing"
-                  fileName={iconName}
-                  folderName="databasing"
-                />
-              ))}
+              <div className="grid grid-cols-2 gap-4 place-items-center">
+                {databasingSkills?.skills.map((iconName, index) => (
+                  <SkillsIcon
+                    key={index}
+                    category="databasing"
+                    fileName={iconName}
+                    folderName="databasing"
+                  />
+                ))}
+              </div>
             </div>
             <div
               className={`p-4 bg-white rounded-lg md:p-8 ${
@@ -169,14 +175,16 @@ const Skills = () => {
               role="tabpanel"
               aria-labelledby="cloud-hosting-tab"
             >
-              {cloudHostingSkills?.skills.map((iconName, index) => (
-                <SkillsIcon
-                  key={index}
-                  category="cloud-hosting"
-                  fileName={iconName}
-                  folderName="cloud-hosting"
-                />
-              ))}
+              <div className="grid grid-cols-2 gap-4 place-items-center">
+                {cloudHostingSkills?.skills.map((iconName, index) => (
+                  <SkillsIcon
+                    key={index}
+                    category="cloud-hosting"
+                    fileName={iconName}
+                    folderName="cloud-hosting"
+                  />
+                ))}
+              </div>
             </div>
             <div
               className={`p-4 bg-white rounded-lg md:p-8 ${
@@ -186,14 +194,16 @@ const Skills = () => {
               role="tabpanel"
               aria-labelledby="misc-tab"
             >
-              {miscSkills?.skills.map((iconName, index) => (
-                <SkillsIcon
-                  key={index}
-                  category="misc"
-                  fileName={iconName}
-                  folderName="misc"
-                />
-              ))}
+              <div className="grid grid-cols-2 gap-4 place-items-center">
+                {miscSkills?.skills.map((iconName, index) => (
+                  <SkillsIcon
+                    key={index}
+                    category="misc"
+                    fileName={iconName}
+                    folderName="misc"
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </div>
