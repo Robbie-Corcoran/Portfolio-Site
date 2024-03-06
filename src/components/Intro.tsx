@@ -28,9 +28,12 @@ const Intro = () => {
               Development. Since 2023, I've broadened my skill set to Back-End
               Development, mastering server-side activities, RESTful APIs, TDD,
               and business logic. Now, I'm a Full-Stack Developer, always
-              pushing my limits and eager to learn new techs. When I'm not
-              coding, you'll find me outdoors, playing football, rock-climbing,
-              surfing, or making music.
+              pushing my limits and eager to learn new techs.
+            </p>
+            <br />
+            <p>
+              When I'm not coding, you'll find me outdoors, playing football,
+              rock-climbing, surfing, or making music.
             </p>
             <br />
             <p>
