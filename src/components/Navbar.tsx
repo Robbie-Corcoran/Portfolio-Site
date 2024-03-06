@@ -49,7 +49,7 @@ const Navbar = () => {
           </svg>
         </button>
         <div
-          className={`w-full md:block md:w-auto text-white transition-all ${
+          className={`w-full md:block md:w-auto text-white ${
             navOpen ? "block" : "hidden"
           }`}
           id="navbar-default"
