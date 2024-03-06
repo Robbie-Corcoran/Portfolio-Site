@@ -12,39 +12,48 @@ const Skills = () => {
     {
       category: "frontend",
       skills: [
-        "javascript",
-        "typescript",
-        "react",
-        "vue",
-        "angular",
-        "alpine-js",
-        "tailwind",
-        "bootstrap",
-        "jquery",
-        "wordpress",
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Vue",
+        "Angular",
+        "Alpine",
+        "Tailwind",
+        "Bootstrap",
+        "JQuery",
+        "WordPress",
       ],
     },
     {
       category: "backend",
-      skills: ["java", "python", "spring", "django", "node-js", "maven"],
+      skills: [
+        "Java",
+        "Python",
+        "Spring",
+        "Django",
+        "Node",
+        "Maven",
+        "JUnit5",
+        "RESTful API",
+      ],
     },
     {
       category: "databasing",
-      skills: ["postgresql", "mongodb", "sqlite", "hibernate"],
+      skills: ["PostgreSQL", "MongoDB", "SQLite", "Hibernate"],
     },
     {
       category: "cloud-hosting",
-      skills: ["azure", "aws", "docker", "hostinger", "vercel", "shopify"],
+      skills: ["Azure", "AWS", "Docker", "Hostinger", "Vercel", "Shopify"],
     },
     {
       category: "misc",
       skills: [
-        "git",
-        "github",
-        "indesign",
-        "photoshop",
-        "premiere-pro",
-        "jetbrains",
+        "Git",
+        "GitHub",
+        "InDesign",
+        "PhotoShop",
+        "Premiere Pro",
+        "JetBrains",
       ],
     },
   ];
@@ -70,7 +79,7 @@ const Skills = () => {
   return (
     <>
       <div className="w-full">
-        <h1 className="p-2">Skills</h1>
+        <h1 className="p-2 text-xl">What do I like to use?</h1>
         <div className="border border-theme-primary rounded-sm shadow m-2">
           <ul
             className="flex flex-wrap border-bottom border-theme-primary rounded-sm shadow text-sm justify-center font-medium text-center text-gray-500 rounded-t-lg"
@@ -118,14 +127,18 @@ const Skills = () => {
               role="tabpanel"
               aria-labelledby="frontend-tab"
             >
-              <div className="grid grid-cols-2 gap-4 place-items-center">
+              <div className="grid grid-cols-2 gap-4 place-items-center text-center">
                 {frontendSkills?.skills.map((iconName, index) => (
-                  <SkillsIcon
-                    key={index}
-                    category="frontend"
-                    fileName={iconName}
-                    folderName="frontend"
-                  />
+                  <div>
+                    <SkillsIcon
+                      key={index}
+                      category="frontend"
+                      fileName={iconName}
+                      folderName="frontend"
+                      className=""
+                    />
+                    <h2 className="text-xl">{iconName}</h2>
+                  </div>
                 ))}
               </div>
             </div>
@@ -137,14 +150,17 @@ const Skills = () => {
               role="tabpanel"
               aria-labelledby="backend-tab"
             >
-              <div className="grid grid-cols-2 gap-4 place-items-center">
+              <div className="grid grid-cols-2 gap-4 place-items-center text-center">
                 {backendSkills?.skills.map((iconName, index) => (
-                  <SkillsIcon
-                    key={index}
-                    category="backend"
-                    fileName={iconName}
-                    folderName="backend"
-                  />
+                  <div>
+                    <SkillsIcon
+                      key={index}
+                      category="backend"
+                      fileName={iconName}
+                      folderName="backend"
+                    />
+                    <h2 className="text-xl">{iconName}</h2>
+                  </div>
                 ))}
               </div>
             </div>
@@ -156,14 +172,17 @@ const Skills = () => {
               role="tabpanel"
               aria-labelledby="databasing-tab"
             >
-              <div className="grid grid-cols-2 gap-4 place-items-center">
+              <div className="grid grid-cols-2 gap-4 place-items-center text-center">
                 {databasingSkills?.skills.map((iconName, index) => (
-                  <SkillsIcon
-                    key={index}
-                    category="databasing"
-                    fileName={iconName}
-                    folderName="databasing"
-                  />
+                  <div>
+                    <SkillsIcon
+                      key={index}
+                      category="databasing"
+                      fileName={iconName}
+                      folderName="databasing"
+                    />
+                    <h2 className="text-xl">{iconName}</h2>
+                  </div>
                 ))}
               </div>
             </div>
@@ -175,14 +194,17 @@ const Skills = () => {
               role="tabpanel"
               aria-labelledby="cloud-hosting-tab"
             >
-              <div className="grid grid-cols-2 gap-4 place-items-center">
+              <div className="grid grid-cols-2 gap-4 place-items-center text-center">
                 {cloudHostingSkills?.skills.map((iconName, index) => (
-                  <SkillsIcon
-                    key={index}
-                    category="cloud-hosting"
-                    fileName={iconName}
-                    folderName="cloud-hosting"
-                  />
+                  <div>
+                    <SkillsIcon
+                      key={index}
+                      category="cloud-hosting"
+                      fileName={iconName}
+                      folderName="cloud-hosting"
+                    />
+                    <h2 className="text-xl">{iconName}</h2>
+                  </div>
                 ))}
               </div>
             </div>
@@ -194,14 +216,17 @@ const Skills = () => {
               role="tabpanel"
               aria-labelledby="misc-tab"
             >
-              <div className="grid grid-cols-2 gap-4 place-items-center">
+              <div className="grid grid-cols-2 gap-4 place-items-center text-center">
                 {miscSkills?.skills.map((iconName, index) => (
-                  <SkillsIcon
-                    key={index}
-                    category="misc"
-                    fileName={iconName}
-                    folderName="misc"
-                  />
+                  <div>
+                    <SkillsIcon
+                      key={index}
+                      category="misc"
+                      fileName={iconName}
+                      folderName="misc"
+                    />
+                    <h2 className="text-xl">{iconName}</h2>
+                  </div>
                 ))}
               </div>
             </div>
