@@ -7,18 +7,64 @@ const Skills = () => {
     setActiveTab(tabId);
   };
 
-  const frontendSkillIcons = [
-    "javascript",
-    "typescript",
-    "react",
-    "vue",
-    "angular",
-    "alpine-js",
-    "tailwind",
-    "bootstrap",
-    "jquery",
-    "wordpress",
+  const skillIcons = [
+    {
+      category: "frontend",
+      skills: [
+        "javascript",
+        "typescript",
+        "react",
+        "vue",
+        "angular",
+        "alpine-js",
+        "tailwind",
+        "bootstrap",
+        "jquery",
+        "wordpress",
+      ],
+    },
+    {
+      category: "backend",
+      skills: ["java", "python", "spring", "django", "node-js", "maven"],
+    },
+    {
+      category: "databasing",
+      skills: ["postgresql", "mongodb", "sqlite", "hibernate"],
+    },
+    {
+      category: "cloud-hosting",
+      skills: ["azure", "aws", "docker", "hostinger", "vercel", "shopify"],
+    },
+    {
+      category: "misc",
+      skills: [
+        "git",
+        "github",
+        "indesign",
+        "photoshop",
+        "premiere-pro",
+        "jetbrains",
+      ],
+    },
   ];
+
+  const frontendSkills = skillIcons.find(
+    (category) => category.category === "frontend"
+  );
+
+  const backendSkills = skillIcons.find(
+    (category) => category.category === "backend"
+  );
+
+  const databasingSkills = skillIcons.find(
+    (category) => category.category === "databasing"
+  );
+  const cloudHostingSkills = skillIcons.find(
+    (category) => category.category === "cloud-hosting"
+  );
+  const miscSkills = skillIcons.find(
+    (category) => category.category === "misc"
+  );
 
   return (
     <>
@@ -125,9 +171,10 @@ const Skills = () => {
               role="tabpanel"
               aria-labelledby="frontend-tab"
             >
-              {frontendSkillIcons.map((iconName, index) => (
+              {frontendSkills?.skills.map((iconName, index) => (
                 <SkillsIcon
                   key={index}
+                  category="frontend"
                   fileName={iconName}
                   folderName="frontend"
                 />
@@ -141,7 +188,14 @@ const Skills = () => {
               role="tabpanel"
               aria-labelledby="backend-tab"
             >
-              Backend Tab
+              {backendSkills?.skills.map((iconName, index) => (
+                <SkillsIcon
+                  key={index}
+                  category="backend"
+                  fileName={iconName}
+                  folderName="backend"
+                />
+              ))}
             </div>
             <div
               className={`p-4 bg-white rounded-lg md:p-8 ${
@@ -151,7 +205,14 @@ const Skills = () => {
               role="tabpanel"
               aria-labelledby="databasing-tab"
             >
-              Databasing Tab
+              {databasingSkills?.skills.map((iconName, index) => (
+                <SkillsIcon
+                  key={index}
+                  category="databasing"
+                  fileName={iconName}
+                  folderName="databasing"
+                />
+              ))}
             </div>
             <div
               className={`p-4 bg-white rounded-lg md:p-8 ${
@@ -161,7 +222,14 @@ const Skills = () => {
               role="tabpanel"
               aria-labelledby="cloud-hosting-tab"
             >
-              Cloud & Hosting Tab
+              {cloudHostingSkills?.skills.map((iconName, index) => (
+                <SkillsIcon
+                  key={index}
+                  category="cloud-hosting"
+                  fileName={iconName}
+                  folderName="cloud-hosting"
+                />
+              ))}
             </div>
             <div
               className={`p-4 bg-white rounded-lg md:p-8 ${
@@ -171,7 +239,14 @@ const Skills = () => {
               role="tabpanel"
               aria-labelledby="misc-tab"
             >
-              Misc Tab
+              {miscSkills?.skills.map((iconName, index) => (
+                <SkillsIcon
+                  key={index}
+                  category="misc"
+                  fileName={iconName}
+                  folderName="misc"
+                />
+              ))}
             </div>
           </div>
         </div>

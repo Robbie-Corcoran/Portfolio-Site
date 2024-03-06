@@ -1,6 +1,7 @@
 import { SVGProps } from "react";
 
 interface SkillsIconProps extends SVGProps<SVGSVGElement> {
+  category: string;
   fileName: string;
   folderName: string;
 }
