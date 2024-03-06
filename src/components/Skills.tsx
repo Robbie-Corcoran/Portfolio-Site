@@ -234,7 +234,4 @@ const Skills = () => {
     </>
   );
 };
-
-Skills.propTypes = {};
-
 export default Skills;
