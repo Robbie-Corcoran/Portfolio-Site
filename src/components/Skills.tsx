@@ -76,9 +76,9 @@ const Skills = () => {
 
   return (
     <>
-      <div className="w-full">
-        <h1 className="p-2 text-xl">What do I like to use?</h1>
-        <div className="border border-theme-primary rounded-sm shadow m-2">
+      <div>
+        <h1 className="p-2 text-xl mt-6">What do I like to use?</h1>
+        <div className="max-w-sm bg-white border border-theme-primary rounded-lg shadow m-auto">
           <ul
             className="flex flex-wrap border-bottom border-theme-primary rounded-sm shadow text-sm justify-center font-medium text-center text-gray-500 rounded-t-lg"
             id="defaultTab"
