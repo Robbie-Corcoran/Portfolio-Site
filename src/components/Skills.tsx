@@ -1,5 +1,6 @@
 import { useState } from "react";
 import SkillsIcon from "./SkillsIcon";
+import SkillsTab from "./SkillsTab";
 
 const Skills = () => {
   const [activeTab, setActiveTab] = useState<string>("frontend");
@@ -69,6 +70,7 @@ const Skills = () => {
   return (
     <>
       <div className="w-full">
+        <h1 className="p-2">Skills</h1>
         <div className="border border-theme-primary rounded-sm shadow m-2">
           <ul
             className="flex flex-wrap text-sm font-medium text-center text-gray-500 rounded-t-lg"
@@ -76,91 +78,36 @@ const Skills = () => {
             data-tabs-toggle="#defaultTabContent"
             role="tablist"
           >
-            <li className="me-2">
-              <button
-                id="frontend-tab"
-                type="button"
-                role="tab"
-                aria-controls="frontend"
-                aria-selected={activeTab === "frontend"}
-                className={`inline-block p-4 ${
-                  activeTab === "frontend"
-                    ? "text-blue-600"
-                    : "hover:text-gray-600 hover:bg-gray-100"
-                } rounded-ss-lg`}
-                onClick={() => handleTabClick("frontend")}
-              >
-                Frontend
-              </button>
-            </li>
-            <li className="me-2">
-              <button
-                id="backend-tab"
-                type="button"
-                role="tab"
-                aria-controls="backend"
-                aria-selected={activeTab === "backend"}
-                className={`inline-block p-4 ${
-                  activeTab === "backend"
-                    ? "text-blue-600"
-                    : "hover:text-gray-600 hover:bg-gray-100"
-                }`}
-                onClick={() => handleTabClick("backend")}
-              >
-                Backend
-              </button>
-            </li>
-            <li className="me-2">
-              <button
-                id="databasing-tab"
-                type="button"
-                role="tab"
-                aria-controls="databasing"
-                aria-selected={activeTab === "databasing"}
-                className={`inline-block p-4 ${
-                  activeTab === "databasing"
-                    ? "text-blue-600"
-                    : "hover:text-gray-600 hover:bg-gray-100"
-                }`}
-                onClick={() => handleTabClick("databasing")}
-              >
-                Databasing
-              </button>
-            </li>
-            <li className="me-2">
-              <button
-                id="cloud-hosting-tab"
-                type="button"
-                role="tab"
-                aria-controls="cloud-hosting"
-                aria-selected={activeTab === "cloud-hosting"}
-                className={`inline-block p-4 ${
-                  activeTab === "cloud-hosting"
-                    ? "text-blue-600"
-                    : "hover:text-gray-600 hover:bg-gray-100"
-                }`}
-                onClick={() => handleTabClick("cloud-hosting")}
-              >
-                Cloud & Hosting
-              </button>
-            </li>
-            <li className="me-2">
-              <button
-                id="misc-tab"
-                type="button"
-                role="tab"
-                aria-controls="misc"
-                aria-selected={activeTab === "misc"}
-                className={`inline-block p-4 ${
-                  activeTab === "misc"
-                    ? "text-blue-600"
-                    : "hover:text-gray-600 hover:bg-gray-100"
-                }`}
-                onClick={() => handleTabClick("misc")}
-              >
-                Misc
-              </button>
-            </li>
+            <SkillsTab
+              tabId="frontend"
+              tabName="Frontend"
+              activeTab={activeTab}
+              handleTabClick={handleTabClick}
+            />
+            <SkillsTab
+              tabId="backend"
+              tabName="Backend"
+              activeTab={activeTab}
+              handleTabClick={handleTabClick}
+            />
+            <SkillsTab
+              tabId="databasing"
+              tabName="Databasing"
+              activeTab={activeTab}
+              handleTabClick={handleTabClick}
+            />
+            <SkillsTab
+              tabId="cloud-hosting"
+              tabName="Cloud & Hosting"
+              activeTab={activeTab}
+              handleTabClick={handleTabClick}
+            />
+            <SkillsTab
+              tabId="misc"
+              tabName="Misc"
+              activeTab={activeTab}
+              handleTabClick={handleTabClick}
+            />
           </ul>
           <div>
             <div
