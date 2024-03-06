@@ -61,11 +61,9 @@ const Skills = () => {
   const frontendSkills = skillIcons.find(
     (category) => category.category === "frontend"
   );
-
   const backendSkills = skillIcons.find(
     (category) => category.category === "backend"
   );
-
   const databasingSkills = skillIcons.find(
     (category) => category.category === "databasing"
   );

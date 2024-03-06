@@ -3,21 +3,23 @@ import ProjectsCard from "./ProjectsCard";
 const Projects = () => {
   return (
     <>
-      <div className="mx-2">Projects</div>
+      <h2 className="text-xl p-2">What have I built?</h2>
       <div className="w-full">
         <ProjectsCard
-          title="exampleTitle"
-          subtitle="exampleSubtitle"
+          title="FestiSounds"
           description="exampleDescription"
           previewPath="examplePreviewPath"
           previewAlt="examplePreviewAlt"
+          projectURL="exampleURL"
+          // projectGitHub="exampleGitHub"
         />
         <ProjectsCard
           title="exampleTitle"
-          subtitle="exampleSubtitle"
           description="exampleDescription"
           previewPath="examplePreviewPath"
           previewAlt="examplePreviewAlt"
+          projectURL="exampleURL"
+          // projectGitHub="exampleGitHub"
         />
       </div>
     </>
