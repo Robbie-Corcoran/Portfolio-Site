@@ -2,13 +2,18 @@ import { useState } from "react";
 import SkillsIcon from "./SkillsIcon";
 import SkillsTab from "./SkillsTab";
 
+type SkillType = {
+  category: string;
+  skills: string[];
+};
+
 const Skills = () => {
   const [activeTab, setActiveTab] = useState<string>("frontend");
   const handleTabClick = (tabId: string) => {
     setActiveTab(tabId);
   };
 
-  const skillIcons = [
+  const skillIcons: SkillType[] = [
     {
       category: "frontend",
       skills: [
@@ -34,7 +39,7 @@ const Skills = () => {
         "Node",
         "Maven",
         "JUnit5",
-        "RESTful API",
+        "REST",
       ],
     },
     {
@@ -127,9 +132,8 @@ const Skills = () => {
             >
               <div className="grid grid-cols-2 gap-4 place-items-center text-center">
                 {frontendSkills?.skills.map((iconName, index) => (
-                  <div>
+                  <div key={`frontend-${index}`}>
                     <SkillsIcon
-                      key={index}
                       category="frontend"
                       fileName={iconName}
                       folderName="frontend"
@@ -150,7 +154,7 @@ const Skills = () => {
             >
               <div className="grid grid-cols-2 gap-4 place-items-center text-center">
                 {backendSkills?.skills.map((iconName, index) => (
-                  <div>
+                  <div key={`backend-${index}`}>
                     <SkillsIcon
                       key={index}
                       category="backend"
@@ -172,7 +176,7 @@ const Skills = () => {
             >
               <div className="grid grid-cols-2 gap-4 place-items-center text-center">
                 {databasingSkills?.skills.map((iconName, index) => (
-                  <div>
+                  <div key={`databasing-${index}`}>
                     <SkillsIcon
                       key={index}
                       category="databasing"
@@ -194,7 +198,7 @@ const Skills = () => {
             >
               <div className="grid grid-cols-2 gap-4 place-items-center text-center">
                 {cloudHostingSkills?.skills.map((iconName, index) => (
-                  <div>
+                  <div key={`cloud-hosting-${index}`}>
                     <SkillsIcon
                       key={index}
                       category="cloud-hosting"
@@ -216,7 +220,7 @@ const Skills = () => {
             >
               <div className="grid grid-cols-2 gap-4 place-items-center text-center">
                 {miscSkills?.skills.map((iconName, index) => (
-                  <div>
+                  <div key={`misc-${index}`}>
                     <SkillsIcon
                       key={index}
                       category="misc"
