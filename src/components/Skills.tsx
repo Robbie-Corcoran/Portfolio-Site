@@ -83,7 +83,7 @@ const Skills = () => {
     <>
       <section id="skills">
         <h1 className="p-2 text-xl mt-6">What do I like to use?</h1>
-        <div className="max-w-sm bg-white border border-theme-primary rounded-lg shadow m-auto">
+        <div className="max-w-sm bg-white border border-theme-primary rounded-lg shadow m-auto md:max-w-md lg:max-w-[36rem]">
           <ul
             className="flex flex-wrap border-bottom border-theme-primary rounded-sm shadow text-sm justify-center font-medium text-center text-gray-500 rounded-t-lg"
             id="defaultTab"
@@ -130,7 +130,7 @@ const Skills = () => {
               role="tabpanel"
               aria-labelledby="frontend-tab"
             >
-              <div className="grid grid-cols-2 gap-4 place-items-center text-center">
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-4 place-items-center text-center">
                 {frontendSkills?.skills.map((iconName, index) => (
                   <div key={`frontend-${index}`}>
                     <SkillsIcon
