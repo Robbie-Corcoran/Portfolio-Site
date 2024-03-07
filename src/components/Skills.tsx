@@ -81,7 +81,7 @@ const Skills = () => {
 
   return (
     <>
-      <div>
+      <section id="skills">
         <h1 className="p-2 text-xl mt-6">What do I like to use?</h1>
         <div className="max-w-sm bg-white border border-theme-primary rounded-lg shadow m-auto">
           <ul
@@ -234,7 +234,7 @@ const Skills = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

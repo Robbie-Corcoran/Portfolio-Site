@@ -1,7 +1,7 @@
-export const navLinks = [
-    {href: "#home", label: "Home"},
-    {href: "#about-me", label: "About Me"},
-    {href: "#skills", label: "Skills"},
-    {href: "#projects", label: "Projects"},
-    {href: "#contact", label: "Contact"},
-];
+export const navItems: Array<{ id: number; text: string; href: string }> = [
+    { id: 1, text: "Home", href: "#" },
+    { id: 2, text: "About", href: "#about" },
+    { id: 3, text: "Skills", href: "#skills" },
+    { id: 4, text: "Projects", href: "#projects" },
+    { id: 5, text: "Contact", href: "#contact" },
+  ];
