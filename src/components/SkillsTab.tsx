@@ -11,11 +11,6 @@ const SkillsTab: React.FC<SkillsTabType> = ({
   activeTab,
   handleTabClick,
 }) => {
-  const tabClassName =
-    activeTab === tabId
-      ? "text-blue-600"
-      : "hover:text-gray-600 hover:bg-gray-100";
-
   return (
     <>
       <li className="me-2">
@@ -25,7 +20,7 @@ const SkillsTab: React.FC<SkillsTabType> = ({
           role="tab"
           aria-controls={tabId}
           aria-selected={activeTab === tabId}
-          className={`inline-block p-4 ${tabClassName}`}
+          className={`inline-block p-4`}
           onClick={() => handleTabClick(tabId)}
         >
           {tabName}
