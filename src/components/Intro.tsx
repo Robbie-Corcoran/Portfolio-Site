@@ -17,7 +17,7 @@ const Intro = () => {
             <h3 className="text-2xl">Welcome to my portfolio.</h3>
           </div>
           <hr className="w-screen" />
-          <div className="p-3">
+          <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
             <p>
               I'm Full Stack Web Developer from Ireland, based in Amsterdam, NL.
             </p>
@@ -47,7 +47,7 @@ const Intro = () => {
                 href="https://github.com/Robbie-Corcoran"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline"
+                className="hover:underline"
               >
                 GitHub
               </a>{" "}
@@ -56,7 +56,7 @@ const Intro = () => {
                 href="https://www.linkedin.com/in/robbie-corcoran/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline"
+                className="hover:underline"
               >
                 LinkedIn
               </a>

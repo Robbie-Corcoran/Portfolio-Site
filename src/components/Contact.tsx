@@ -3,10 +3,13 @@ import ContactIcon from "./SVGIcon";
 const Contact = () => {
   return (
     <>
-      <section id="contact">
-        <div className="m-2">
-          <h1 className="text-2xl">Contact Me</h1>
-          <h2 className="text-center">
+      <section
+        id="contact"
+        className="w-full max-w-screen-xl mx-auto p-4 md:py-8 text-theme-primary"
+      >
+        <div>
+          <h1 className="text-xl font-bold tracking-tight">Contact Me</h1>
+          <h2 className="text-center mt-2">
             I'm always interested in positions, projects and collab
             opportunities, as well as any feedback that you might have.
             <br />
