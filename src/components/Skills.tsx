@@ -1,5 +1,5 @@
 import { useState } from "react";
-import SkillsIcon from "./SkillsIcon";
+import SkillsIcon from "./SVGIcon";
 import SkillsTab from "./SkillsTab";
 
 type SkillType = {
@@ -136,7 +136,7 @@ const Skills = () => {
                     <SkillsIcon
                       category="frontend"
                       fileName={iconName}
-                      folderName="frontend"
+                      filePath="skillIcons/frontend"
                       className=""
                     />
                     <h2 className="text-xl">{iconName}</h2>
@@ -159,7 +159,7 @@ const Skills = () => {
                       key={index}
                       category="backend"
                       fileName={iconName}
-                      folderName="backend"
+                      filePath="skillIcons/backend"
                     />
                     <h2 className="text-xl">{iconName}</h2>
                   </div>
@@ -181,7 +181,7 @@ const Skills = () => {
                       key={index}
                       category="databasing"
                       fileName={iconName}
-                      folderName="databasing"
+                      filePath="skillIcons/databasing"
                     />
                     <h2 className="text-xl">{iconName}</h2>
                   </div>
@@ -203,7 +203,7 @@ const Skills = () => {
                       key={index}
                       category="cloud-hosting"
                       fileName={iconName}
-                      folderName="cloud-hosting"
+                      filePath="skillIcons/cloud-hosting"
                     />
                     <h2 className="text-xl">{iconName}</h2>
                   </div>
@@ -225,7 +225,7 @@ const Skills = () => {
                       key={index}
                       category="misc"
                       fileName={iconName}
-                      folderName="misc"
+                      filePath="skillIcons/misc"
                     />
                     <h2 className="text-xl">{iconName}</h2>
                   </div>

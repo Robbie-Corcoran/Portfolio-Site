@@ -31,6 +31,4 @@ const Projects = () => {
   );
 };
 
-Projects.propTypes = {};
-
 export default Projects;
