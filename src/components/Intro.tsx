@@ -1,15 +1,15 @@
 const Intro = () => {
   return (
     <>
-      <div className="flex justify-center items-center pt-24 pb-4">
+      <div className="flex justify-center items-center  pb-4">
         <img
           className="rounded-full w-40 h-40 border-theme-primary border-2"
           src="public/portrait.jpg"
           alt="robbie corcoran's portrait"
         ></img>
       </div>
-      <div className="flex justify-center items-center h-fit w-full">
-        <section className="text-theme-primary text-center">
+      <div>
+        <section id="about" className="text-theme-primary text-center">
           <div className="pb-3">
             <h1 className="text-2xl">
               Hi, I'm <span className="text-4xl font-bold">Robbie</span>.
@@ -17,7 +17,7 @@ const Intro = () => {
             <h3 className="text-2xl">Welcome to my portfolio.</h3>
           </div>
           <hr className="w-screen" />
-          <div className="p-3">
+          <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
             <p>
               I'm Full Stack Web Developer from Ireland, based in Amsterdam, NL.
             </p>
@@ -47,7 +47,7 @@ const Intro = () => {
                 href="https://github.com/Robbie-Corcoran"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline"
+                className="hover:underline"
               >
                 GitHub
               </a>{" "}
@@ -56,7 +56,7 @@ const Intro = () => {
                 href="https://www.linkedin.com/in/robbie-corcoran/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline"
+                className="hover:underline"
               >
                 LinkedIn
               </a>

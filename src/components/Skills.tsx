@@ -1,6 +1,11 @@
 import { useState } from "react";
-import SkillsIcon from "./SkillsIcon";
+import SkillsIcon from "./SVGIcon";
 import SkillsTab from "./SkillsTab";
+
+type SkillType = {
+  category: string;
+  skills: string[];
+};
 
 const Skills = () => {
   const [activeTab, setActiveTab] = useState<string>("frontend");
@@ -8,7 +13,7 @@ const Skills = () => {
     setActiveTab(tabId);
   };
 
-  const skillIcons = [
+  const skillIcons: SkillType[] = [
     {
       category: "frontend",
       skills: [
@@ -34,7 +39,7 @@ const Skills = () => {
         "Node",
         "Maven",
         "JUnit5",
-        "RESTful API",
+        "REST",
       ],
     },
     {
@@ -61,11 +66,9 @@ const Skills = () => {
   const frontendSkills = skillIcons.find(
     (category) => category.category === "frontend"
   );
-
   const backendSkills = skillIcons.find(
     (category) => category.category === "backend"
   );
-
   const databasingSkills = skillIcons.find(
     (category) => category.category === "databasing"
   );
@@ -78,9 +81,14 @@ const Skills = () => {
 
   return (
     <>
-      <div className="w-full">
-        <h1 className="p-2 text-xl">What do I like to use?</h1>
-        <div className="border border-theme-primary rounded-sm shadow m-2">
+      <section
+        id="skills"
+        className="w-full max-w-screen-xl mx-auto p-4 md:py-8 text-theme-primary"
+      >
+        <h1 className="p-2 text-xl mt-8 font-bold tracking-tight">
+          What do I like to use?
+        </h1>
+        <div className="max-w-sm bg-white border border-theme-primary rounded-lg shadow m-auto md:max-w-md lg:max-w-[36rem]">
           <ul
             className="flex flex-wrap border-bottom border-theme-primary rounded-sm shadow text-sm justify-center font-medium text-center text-gray-500 rounded-t-lg"
             id="defaultTab"
@@ -120,21 +128,20 @@ const Skills = () => {
           </ul>
           <div>
             <div
-              className={`p-4 bg-white rounded-lg md:p-8 ${
+              className={`p-4 bg-white rounded-lg md:p-8 h-96 overflow-auto overflow-x-scroll ${
                 activeTab === "frontend" ? "block" : "hidden"
               }`}
               id="frontend"
               role="tabpanel"
               aria-labelledby="frontend-tab"
             >
-              <div className="grid grid-cols-2 gap-4 place-items-center text-center">
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-4 place-items-center text-center">
                 {frontendSkills?.skills.map((iconName, index) => (
-                  <div>
+                  <div key={`frontend-${index}`}>
                     <SkillsIcon
-                      key={index}
                       category="frontend"
                       fileName={iconName}
-                      folderName="frontend"
+                      filePath="skillIcons/frontend"
                       className=""
                     />
                     <h2 className="text-xl">{iconName}</h2>
@@ -143,7 +150,7 @@ const Skills = () => {
               </div>
             </div>
             <div
-              className={`p-4 bg-white rounded-lg md:p-8 ${
+              className={`p-4 bg-white rounded-lg md:p-8 h-96 overflow-auto overflow-x-scroll ${
                 activeTab === "backend" ? "block" : "hidden"
               }`}
               id="backend"
@@ -152,12 +159,12 @@ const Skills = () => {
             >
               <div className="grid grid-cols-2 gap-4 place-items-center text-center">
                 {backendSkills?.skills.map((iconName, index) => (
-                  <div>
+                  <div key={`backend-${index}`}>
                     <SkillsIcon
                       key={index}
                       category="backend"
                       fileName={iconName}
-                      folderName="backend"
+                      filePath="skillIcons/backend"
                     />
                     <h2 className="text-xl">{iconName}</h2>
                   </div>
@@ -165,7 +172,7 @@ const Skills = () => {
               </div>
             </div>
             <div
-              className={`p-4 bg-white rounded-lg md:p-8 ${
+              className={`p-4 bg-white rounded-lg md:p-8 h-96 overflow-auto overflow-x-scroll ${
                 activeTab === "databasing" ? "block" : "hidden"
               }`}
               id="databasing"
@@ -174,12 +181,12 @@ const Skills = () => {
             >
               <div className="grid grid-cols-2 gap-4 place-items-center text-center">
                 {databasingSkills?.skills.map((iconName, index) => (
-                  <div>
+                  <div key={`databasing-${index}`}>
                     <SkillsIcon
                       key={index}
                       category="databasing"
                       fileName={iconName}
-                      folderName="databasing"
+                      filePath="skillIcons/databasing"
                     />
                     <h2 className="text-xl">{iconName}</h2>
                   </div>
@@ -187,7 +194,7 @@ const Skills = () => {
               </div>
             </div>
             <div
-              className={`p-4 bg-white rounded-lg md:p-8 ${
+              className={`p-4 bg-white rounded-lg md:p-8 h-96 overflow-auto overflow-x-scroll ${
                 activeTab === "cloud-hosting" ? "block" : "hidden"
               }`}
               id="cloud-hosting"
@@ -196,12 +203,12 @@ const Skills = () => {
             >
               <div className="grid grid-cols-2 gap-4 place-items-center text-center">
                 {cloudHostingSkills?.skills.map((iconName, index) => (
-                  <div>
+                  <div key={`cloud-hosting-${index}`}>
                     <SkillsIcon
                       key={index}
                       category="cloud-hosting"
                       fileName={iconName}
-                      folderName="cloud-hosting"
+                      filePath="skillIcons/cloud-hosting"
                     />
                     <h2 className="text-xl">{iconName}</h2>
                   </div>
@@ -209,7 +216,7 @@ const Skills = () => {
               </div>
             </div>
             <div
-              className={`p-4 bg-white rounded-lg md:p-8 ${
+              className={`p-4 bg-white rounded-lg md:p-8 h-96 overflow-auto overflow-x-scroll ${
                 activeTab === "misc" ? "block" : "hidden"
               }`}
               id="misc"
@@ -218,12 +225,12 @@ const Skills = () => {
             >
               <div className="grid grid-cols-2 gap-4 place-items-center text-center">
                 {miscSkills?.skills.map((iconName, index) => (
-                  <div>
+                  <div key={`misc-${index}`}>
                     <SkillsIcon
                       key={index}
                       category="misc"
                       fileName={iconName}
-                      folderName="misc"
+                      filePath="skillIcons/misc"
                     />
                     <h2 className="text-xl">{iconName}</h2>
                   </div>
@@ -232,11 +239,8 @@ const Skills = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };
-
-Skills.propTypes = {};
-
 export default Skills;
