@@ -140,7 +140,7 @@ const Skills = () => {
                   <div key={`frontend-${index}`}>
                     <SkillsIcon
                       category="frontend"
-                      fileName={iconName}
+                      fileName={iconName.toLowerCase()}
                       filePath="skillIcons/frontend"
                       className=""
                     />
@@ -163,7 +163,7 @@ const Skills = () => {
                     <SkillsIcon
                       key={index}
                       category="backend"
-                      fileName={iconName}
+                      fileName={iconName.toLowerCase()}
                       filePath="skillIcons/backend"
                     />
                     <h2 className="text-xl">{iconName}</h2>
@@ -185,7 +185,7 @@ const Skills = () => {
                     <SkillsIcon
                       key={index}
                       category="databasing"
-                      fileName={iconName}
+                      fileName={iconName.toLowerCase()}
                       filePath="skillIcons/databasing"
                     />
                     <h2 className="text-xl">{iconName}</h2>
@@ -207,7 +207,7 @@ const Skills = () => {
                     <SkillsIcon
                       key={index}
                       category="cloud-hosting"
-                      fileName={iconName}
+                      fileName={iconName.toLowerCase()}
                       filePath="skillIcons/cloud-hosting"
                     />
                     <h2 className="text-xl">{iconName}</h2>
@@ -229,7 +229,7 @@ const Skills = () => {
                     <SkillsIcon
                       key={index}
                       category="misc"
-                      fileName={iconName}
+                      fileName={iconName.toLowerCase()}
                       filePath="skillIcons/misc"
                     />
                     <h2 className="text-xl">{iconName}</h2>
