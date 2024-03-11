@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="bg-theme-primary text-theme-text w-full fixed ">
+      <nav className="bg-theme-primary text-theme-text w-full fixed z-50">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <div className="flex items-center space-x-3">
             <span className="self-center text-2xl font-semibold whitespace-nowrap">
@@ -44,7 +44,7 @@ const Navbar = () => {
           </button>
           <div
             className={`w-full md:block md:w-auto text-white ${
-              navOpen ? "block" : "hidden"
+              navOpen ? "block transition ease-in duration-250" : "hidden"
             }`}
             id="navbar-default"
           >

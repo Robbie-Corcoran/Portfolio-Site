@@ -10,9 +10,9 @@ const SVGIcon: React.FC<SVGIconProps> = ({ fileName, filePath }) => {
   return (
     <>
       <img
-        src={`../../public/${filePath}/${fileName}.svg`}
+        src={`${filePath}/${fileName}.svg`}
         alt={`${fileName}`}
-        className="h-16 w-16 m-2"
+        className="h-16 w-16 m-2 mx-auto hover:scale-110 duration-150"
       />
       <span className="sr-only">{fileName}</span>
     </>

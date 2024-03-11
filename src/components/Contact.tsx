@@ -16,7 +16,7 @@ const Contact = () => {
             Feel free to reach out to me on any of the below channels and we can
             take it from there!
           </h2>
-          <div className="flex mt-4 justify-center">
+          <div className="flex mt-4 justify-center gap-2">
             <a
               href="mailto:hello@robbiecorcoran.com"
               target="_blank"

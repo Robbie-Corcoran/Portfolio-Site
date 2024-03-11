@@ -4,7 +4,7 @@ const Intro = () => {
       <div className="flex justify-center items-center  pb-4">
         <img
           className="rounded-full w-40 h-40 border-theme-primary border-2"
-          src="public/portrait.jpg"
+          src="portrait.jpg"
           alt="robbie corcoran's portrait"
         ></img>
       </div>
