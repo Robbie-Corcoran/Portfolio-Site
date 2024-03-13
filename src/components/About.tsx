@@ -2,8 +2,8 @@ const About = () => {
   return (
     <div>
       <section id="about" className="text-theme-primary text-center">
-        <hr className="w-screen" />
-        <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <hr className="w-screen lg:hidden" />
+        <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8 lg:max-w-screen-sm">
           <p>
             I'm Full Stack Web Developer from Ireland, based in Amsterdam, NL.
           </p>

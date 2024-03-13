@@ -8,9 +8,11 @@ import Skills from "./components/Skills";
 function App() {
   return (
     <>
-      <Intro />
+      <div className="lg:flex lg:w-full lg:max-w-screen-xl lg:mx-auto lg:p-4 lg:justify-center">
+        <Intro />
 
-      <About />
+        <About />
+      </div>
 
       <Skills />
 

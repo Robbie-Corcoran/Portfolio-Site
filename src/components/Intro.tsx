@@ -1,7 +1,7 @@
 const Intro = () => {
   return (
     <>
-      <div className="flex flex-col justify-center text-theme-primary text-center items-center pb-4">
+      <div className="flex flex-col justify-center text-theme-primary text-center items-center pb-4 lg:p-4 lg:w-fit">
         <img
           className="rounded-full w-40 h-40 border-theme-primary border-2"
           src="portrait.jpg"
