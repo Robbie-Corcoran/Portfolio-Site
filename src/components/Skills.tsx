@@ -85,9 +85,9 @@ const Skills = () => {
     <>
       <section
         id="skills"
-        className="w-full max-w-screen-xl mx-auto p-4 md:py-8 text-theme-primary"
+        className="w-full max-w-screen-xl mx-auto p-4 text-theme-primary"
       >
-        <h1 className="p-2 text-xl mt-8 font-bold tracking-tight">
+        <h1 className="p-2 text-xl font-bold tracking-tight">
           What do I like to use?
         </h1>
         <div className="max-w-sm bg-white border border-theme-primary rounded-lg shadow m-auto md:max-w-md lg:max-w-[36rem]">
