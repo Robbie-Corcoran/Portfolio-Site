@@ -1,30 +1,29 @@
 const About = () => {
   return (
-    <div>
-      <section id="about" className="text-theme-primary text-center">
+    <div className="my-auto">
+      <section
+        id="about"
+        className="text-theme-primary text-center lg:text-left"
+      >
         <hr className="w-screen lg:hidden" />
         <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8 lg:max-w-screen-sm">
           <p>
-            I'm Full Stack Web Developer from Ireland, based in Amsterdam, NL.
+            I use passion to bring together design, development, and
+            functionality.
           </p>
           <br />
           <p>
-            After a decade in Sales, Marketing & Communications, I embraced my
-            passion for programming in 2022, diving into Front-End Development.
-            Since 2023, I've broadened my skill set to Back-End Development,
-            mastering server-side activities, RESTful APIs, TDD, and business
-            logic. Now, I'm a Full-Stack Developer, always pushing my limits and
-            eager to learn new techs.
-          </p>
-          <br />
-          <p>
-            When I'm not coding, you'll find me outdoors, playing football,
-            rock-climbing, surfing, or making music.
+            Dedicated to craft beautiful user expereince while maintaining power
+            under the hood.
           </p>
           <br />
           <p>
             Im open to postions as a Frontend, Backend, or Full Stack developer,
-            as well as projects and collabs. Just reach out!
+            as well as projects and collabs.{" "}
+            <a href="#contact" className="hover:underline font-bold">
+              Just reach out
+            </a>
+            !
           </p>
           <br />
           <p>
