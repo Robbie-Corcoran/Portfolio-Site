@@ -13,13 +13,13 @@ const About = () => {
           </p>
           <br />
           <p>
-            Dedicated to craft beautiful user expereince while maintaining power
-            under the hood.
+            Dedicated to crafting beautiful user experiences while maintaining
+            all the power under the hood.
           </p>
           <br />
           <p>
-            Im open to postions as a Frontend, Backend, or Full Stack developer,
-            as well as projects and collabs.{" "}
+            I'm currently open to postions as a Frontend, Backend, or Full Stack
+            Developer, as well as projects and collabs.{" "}
             <a href="#contact" className="hover:underline font-bold">
               Just reach out
             </a>
