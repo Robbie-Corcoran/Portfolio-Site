@@ -25,8 +25,10 @@ const Skills = () => {
         "Alpine",
         "Tailwind",
         "Bootstrap",
+        "Sass",
         "JQuery",
         "WordPress",
+        "ExpressionEngine",
       ],
     },
     {
