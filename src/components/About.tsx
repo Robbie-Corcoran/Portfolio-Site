@@ -33,7 +33,7 @@ const About = () => {
               href="https://github.com/Robbie-Corcoran"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:underline"
+              className="font-bold hover:underline"
             >
               GitHub
             </a>{" "}
@@ -42,7 +42,7 @@ const About = () => {
               href="https://www.linkedin.com/in/robbie-corcoran/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:underline"
+              className="font-bold hover:underline"
             >
               LinkedIn
             </a>
