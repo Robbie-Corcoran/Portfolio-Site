@@ -32,7 +32,7 @@ To run this project locally, follow these steps:
 1. Navigate into the project directory::
 
    ```bash
-   cd src
+   cd portfolio-site
    ```
 
 ## Usage
