@@ -19,11 +19,13 @@ const About = () => {
           <br />
           <p>
             I'm currently open to postions as a Frontend, Backend, or Full Stack
-            Developer, as well as projects and collabs.{" "}
-            <a href="#contact" className="hover:underline font-bold">
-              Just reach out
-            </a>
-            !
+            Developer, as well as projects and collabs.
+            <p>
+              <a href="#contact" className="hover:underline font-bold">
+                Just reach out
+              </a>
+              !
+            </p>
           </p>
           <br />
           <p>
