@@ -19,12 +19,12 @@ const Contact = () => {
             <a
               href="tel:31630816331"
               target="_blank"
-              className="ms-5 fill-theme-primary"
+              className="mx-2 fill-theme-primary"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 50 50"
-                className="h-16 w-16 m-2 mx-auto hover:scale-110 duration-150"
+                className="size-10 md:size-16 m-2 mx-auto hover:scale-110 duration-150"
               >
                 <path
                   fill="#3B1F6C"
@@ -37,11 +37,11 @@ const Contact = () => {
             <a
               href="https://wa.me/353831172314"
               target="_blank"
-              className="ms-5 fill-theme-primary"
+              className="mx-2 fill-theme-primary"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-16 w-16 m-2 mx-auto hover:scale-110 duration-150"
+                className="size-10 md:size-16 m-2 mx-auto hover:scale-110 duration-150"
                 viewBox="0 0 737.509 740.824"
               >
                 <path
@@ -56,11 +56,11 @@ const Contact = () => {
             <a
               href="mailto:hello@robbiecorcoran.com"
               target="_blank"
-              className="ms-5 fill-theme-primary"
+              className="mx-2 fill-theme-primary"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-16 w-16 m-2 mx-auto hover:scale-110 duration-150"
+                className="size-10 md:size-16 m-2 mx-auto hover:scale-110 duration-150"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -74,10 +74,10 @@ const Contact = () => {
             <a
               href="https://github.com/Robbie-Corcoran"
               target="_blank"
-              className="ms-5 fill-theme-primary"
+              className="mx-2 fill-theme-primary"
             >
               <svg
-                className="h-16 w-16 m-2 mx-auto hover:scale-110 duration-150"
+                className="size-10 md:size-16 m-2 mx-auto hover:scale-110 duration-150"
                 viewBox="0 0 256 249"
                 xmlns="http://www.w3.org/2000/svg"
                 preserveAspectRatio="xMinYMin meet"
@@ -94,11 +94,11 @@ const Contact = () => {
             <a
               href="https://www.linkedin.com/in/robbie-corcoran/"
               target="_blank"
-              className="ms-5 fill-theme-primary"
+              className="mx-2 fill-theme-primary"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-16 w-16 m-2 mx-auto hover:scale-110 duration-150"
+                className="size-10 md:size-16 m-2 mx-auto hover:scale-110 duration-150"
                 viewBox="0 0 24 24"
               >
                 <path
