@@ -13,7 +13,7 @@ const SkillsTab: React.FC<SkillsTabType> = ({
 }) => {
   return (
     <>
-      <li className="me-2">
+      <li className="px-2">
         <button
           id={`${tabId}-tab`}
           type="button"

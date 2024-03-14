@@ -4,11 +4,11 @@ const Testimonials = () => {
   return (
     <section
       id="testimonials"
-      className="w-full max-w-screen-xl mx-auto p-4 md:py-8 place-content-center text-theme-primary"
+      className="w-full max-w-screen-xl mx-auto p-4 md:py-8 place-content-center font-sofia"
     >
       <div>
-        <h2 className="text-xl p-2 mt-8 font-bold tracking-tight">
-          What do people say about me?
+        <h2 className="text-4xl p-2 mt-8 font-bold tracking-tight text-theme-primary ">
+          What do people say?
         </h2>
       </div>
       <TestimonialCard
