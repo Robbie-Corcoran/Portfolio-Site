@@ -146,7 +146,7 @@ const Skills = () => {
                       filePath="skillIcons/frontend"
                       className=""
                     />
-                    <h2 className="text-xl">{iconName}</h2>
+                    <h2 className="text-lg">{iconName}</h2>
                   </div>
                 ))}
               </div>
@@ -159,7 +159,7 @@ const Skills = () => {
               role="tabpanel"
               aria-labelledby="backend-tab"
             >
-              <div className="grid grid-cols-2 gap-4 place-items-center text-center lg:grid-cols-5">
+              <div className="grid grid-cols-2 gap-4 place-items-center text-center lg:grid-cols-4">
                 {backendSkills?.skills.map((iconName, index) => (
                   <div key={`backend-${index}`}>
                     <SkillsIcon
@@ -168,7 +168,7 @@ const Skills = () => {
                       fileName={iconName.toLowerCase()}
                       filePath="skillIcons/backend"
                     />
-                    <h2 className="text-xl">{iconName}</h2>
+                    <h2 className="text-lg">{iconName}</h2>
                   </div>
                 ))}
               </div>
@@ -190,7 +190,7 @@ const Skills = () => {
                       fileName={iconName.toLowerCase()}
                       filePath="skillIcons/databasing"
                     />
-                    <h2 className="text-xl">{iconName}</h2>
+                    <h2 className="text-lg">{iconName}</h2>
                   </div>
                 ))}
               </div>
@@ -212,7 +212,7 @@ const Skills = () => {
                       fileName={iconName.toLowerCase()}
                       filePath="skillIcons/cloud-hosting"
                     />
-                    <h2 className="text-xl">{iconName}</h2>
+                    <h2 className="text-lg">{iconName}</h2>
                   </div>
                 ))}
               </div>
@@ -234,7 +234,7 @@ const Skills = () => {
                       fileName={iconName.toLowerCase()}
                       filePath="skillIcons/misc"
                     />
-                    <h2 className="text-xl">{iconName}</h2>
+                    <h2 className="text-lg">{iconName}</h2>
                   </div>
                 ))}
               </div>

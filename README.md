@@ -1,120 +1,55 @@
-[![header][header-url]][header-link]
+# Portfolio Site
 
-# Project Name
-[![Project Version][version-image]][version-url]
-[![Frontend][Frontend-image]][Frontend-url]
-[![Backend][Backend-image]][Backend-url]
+### [robbiecorcoran.com](https://robbiecorcoran.com)
 
-> Short blurb about your project idea.
+This is my portfolio site built using TypeScript, React, and Tailwind CSS.
 
-One or two paragraphs about your project and what it does.
+## Table of Contents
 
----
-## Author
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
 
-**Your name** 
-* *Initial work* - [repository-name][repository-url] (Repository space)
-* *Released on* [cloud-provider][cloud-provider-url] (Cloud provider)
-* *My professional profile on* [LinkedIn][linkedin-url]
+## Features
 
-## Showcase
-
-This project was designed to demonstrate:
-
-* Technology 1
-  * Tech 1 subitem
-* Technology 2
-* .
-* .
-* .
-* Technology N
-
-## Usage example
-
-Bring the best usages of your project.
-
-_For more examples and usage, please refer to the [Wiki][wiki]._
-
----
+- Showcase your projects, skills, and experiences.
+- Responsive design with Tailwind CSS.
+- Easy to customize and extend.
 
 ## Installation
 
-Describe how to get your project running.
+To run this project locally, follow these steps:
 
-MacOS & Linux:
+1. Clone this repository:
 
-```sh
-npm install my-module --save
-```
+   ```bash
+   git clone https://github.com/Robbie-Corcoran/Portfolio-Site.git
+   ```
 
-Windows:
+1. Navigate into the project directory::
 
-```sh
-edit autoexec.bat
-```
+   ```bash
+   cd src
+   ```
 
----
+## Usage
 
-## Development setup
+1. To start the development server, run:
 
-Describe how to install all development dependencies and consider do this for multiple platforms.  
+   ```bash
+   npm run dev
+   ```
 
-```sh
-make install
-npm test
-```
+Open http://localhost:5173 to view it in the browser.
 
-## Running the tests
+## Technologies Used
 
-Remember this is a showcase, thus your potential employer might want to see an automated test-suite of some kind up running.
-
----
-
-## Built With
-
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#download-and-install) - To deploy on Heroku
-
-## Release History
-
-* 0.2.1
-    * CHANGE: Update docs (module code remains unchanged)
-* 0.2.0
-    * CHANGE: Refactoring - Remove `setAnyMethod()`
-    * ADD: Add `newSomething()`
-* 0.1.1
-    * FIX: Crash when calling `defaultXYZ()` (Thanks @ContributorName)
-* 0.1.0
-    * The first proper release
-* 0.0.1
-    * Initial work
-
----
+- TypeScript: Typed superset of JavaScript for enhanced development.
+- React: A JavaScript library for building user interfaces.
+- Tailwind CSS: A utility-first CSS framework for quickly building custom designs.
 
 ## Contributing
 
-1. Fork it (<https://github.com/yourname/yourproject/fork>)
-2. Create your feature branch (`git checkout -b feature/fooBar`)
-3. Commit your changes (`git commit -am 'Add some fooBar'`)
-4. Push to the branch (`git push origin feature/fooBar`)
-5. Create a new Pull Request
-
-<!-- Markdown link & img dfn's -->
-
-[header-url]: github-template.png
-[header-link]: https://github.com/alexandrerosseto
-
-[repository-url]: https://github.com/alexandrerosseto/wbshopping
-
-[cloud-provider-url]: https://wbshopping.herokuapp.com
-
-[linkedin-url]: https://www.linkedin.com/in/alexandrerosseto
-
-[wiki]: https://github.com/yourname/yourproject/wiki
-
-[version-image]: https://img.shields.io/badge/Version-1.0.0-brightgreen?style=for-the-badge&logo=appveyor
-[version-url]: https://img.shields.io/badge/version-1.0.0-green
-[Frontend-image]: https://img.shields.io/badge/Frontend-Ionic-blue?style=for-the-badge
-[Frontend-url]: https://img.shields.io/badge/Frontend-Ionic-blue?style=for-the-badge
-[Backend-image]: https://img.shields.io/badge/Backend-Java%208-important?style=for-the-badge
-[Backend-url]: https://img.shields.io/badge/Backend-Java%208-important?style=for-the-badge
+Contributions are welcome! If you have any suggestions, improvements, or feature requests, feel free to open an issue or create a pull request.

@@ -15,7 +15,7 @@ const ProjectsCard = ({
 }: ProjectsCardType) => {
   return (
     <>
-      <div className="max-w-sm bg-white border border-theme-primary hover:scale-[101%] duration-200 rounded-lg shadow m-auto mb-4 md:max-w-md">
+      <div className="max-w-sm bg-white border border-theme-primary border-t-0 hover:scale-[101%] duration-200 rounded-lg shadow m-auto mb-4 md:max-w-md">
         <a href={projectURL} target="_blank">
           <img className="rounded-t-lg" src={previewPath} alt={previewAlt} />
         </a>
@@ -26,11 +26,11 @@ const ProjectsCard = ({
           <p className="mb-3 font-normal h-48 overflow-auto overflow-x-scroll">
             {description}
           </p>
-          <button className="border rounded-lg bg-theme-primary">
+          <button className="border rounded-lg bg-theme-primary text-theme-text ">
             <a
               href={projectURL}
               target="_blank"
-              className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-theme-text rounded-lg hover:ring-2 focus:outline-none hover:ring-theme-secondary"
+              className="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:ring-2 focus:outline-none hover:ring-theme-secondary hover:bg-theme-text hover:text-theme-primary"
             >
               Visit Site
               <svg
