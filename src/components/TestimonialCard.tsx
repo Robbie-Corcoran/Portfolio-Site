@@ -16,7 +16,7 @@ const TestimonialCard = ({
   body,
 }: TestimonialCardType) => {
   return (
-    <div className="max-w-sm bg-white border border-theme-primary hover:scale-[101%] duration-200 rounded-lg shadow m-auto mb-4 md:max-w-md lg:max-w-none">
+    <div className="max-w-sm bg-white border border-theme-primary hover:scale-[101%] duration-200 rounded-lg shadow m-auto mb-4 md:max-w-none">
       <div className="flex pl-2">
         <img
           className="border rounded-full size-12 m-2 mt-4 left-0"
