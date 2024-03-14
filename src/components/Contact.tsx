@@ -18,6 +18,22 @@ const Contact = () => {
           </h2>
           <div className="flex mt-4 justify-center gap-2">
             <a
+              href="tel:31630816331"
+              target="_blank"
+              className="text-gray-500 hover:text-gray-900 ms-5"
+            >
+              <ContactIcon fileName="phone" filePath="contact" />
+            </a>
+
+            <a
+              href="https://wa.me/353831172314"
+              target="_blank"
+              className="text-gray-500 hover:text-gray-900 ms-5"
+            >
+              <ContactIcon fileName="whatsapp" filePath="contact" />
+            </a>
+
+            <a
               href="mailto:hello@robbiecorcoran.com"
               target="_blank"
               className="text-gray-500 hover:text-gray-900 ms-5"
