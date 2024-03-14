@@ -15,7 +15,7 @@ const ProjectsCard = ({
 }: ProjectsCardType) => {
   return (
     <>
-      <div className="max-w-sm bg-white border border-theme-primary hover:scale-[101%] duration-200 rounded-lg shadow m-auto mb-4 md:max-w-md">
+      <div className="max-w-sm bg-white border border-theme-primary border-t-0 hover:scale-[101%] duration-200 rounded-lg shadow m-auto mb-4 md:max-w-md">
         <a href={projectURL} target="_blank">
           <img className="rounded-t-lg" src={previewPath} alt={previewAlt} />
         </a>
