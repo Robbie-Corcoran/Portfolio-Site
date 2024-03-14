@@ -14,9 +14,10 @@ This is my portfolio site built using TypeScript, React, and Tailwind CSS.
 
 ## Features
 
-- Showcase your projects, skills, and experiences.
+- Showcase projects, skills, and experiences.
 - Responsive design with Tailwind CSS.
 - Easy to customize and extend.
+- All contact details in one place
 
 ## Installation
 
