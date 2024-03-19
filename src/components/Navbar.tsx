@@ -13,7 +13,7 @@ const Navbar = () => {
       <nav className="bg-theme-black text-theme-text w-full fixed top-0 font-sofia">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <div className="flex items-center space-x-3">
-            <span className="self-center text-2xl font-semibold whitespace-nowrap">
+            <span className="self-center text-2xl font-semibold whitespace-nowrap md:text-4xl">
               Robbie Corcoran
             </span>
           </div>
@@ -43,12 +43,12 @@ const Navbar = () => {
             </svg>
           </button>
           <div
-            className={`w-full md:block md:w-auto text-white bg-opacity-100 ${
+            className={`w-full md:block md:w-auto bg-opacity-100 ${
               navOpen ? "block transition ease-out duration-250" : "hidden"
             }`}
             id="navbar-default"
           >
-            <ul className="font-medium flex flex-col pt-2 pr-3 md:p-0 md:flex-row md:space-x-2 md:mt-0 md:border-0 md:bg-white gap-2">
+            <ul className="font-medium flex flex-col pt-2 pr-3 md:p-0 md:flex-row md:space-x-2 md:mt-0 md:border-0 md:text-2xl gap-2">
               {navItems.map((item) => (
                 <li key={item.id}>
                   <a
