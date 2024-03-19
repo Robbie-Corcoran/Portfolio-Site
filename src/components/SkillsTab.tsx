@@ -20,7 +20,11 @@ const SkillsTab: React.FC<SkillsTabType> = ({
           role="tab"
           aria-controls={tabId}
           aria-selected={activeTab === tabId}
-          className={`inline-block p-4 focus:underline`}
+          className={`inline-block p-4 hover:underline ${
+            activeTab === tabId
+              ? "underline decoration-theme-primary decoration-2"
+              : ""
+          }`}
           onClick={() => handleTabClick(tabId)}
         >
           {tabName}
