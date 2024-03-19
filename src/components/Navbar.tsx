@@ -48,7 +48,7 @@ const Navbar = () => {
             }`}
             id="navbar-default"
           >
-            <ul className="font-medium flex flex-col pt-2 pr-3 md:p-0 md:flex-row md:space-x-2 md:mt-0 md:border-0 md:text-2xl gap-2">
+            <ul className="font-medium flex flex-col pt-1 pr-3 md:p-0 md:flex-row md:space-x-2 md:mt-0 md:border-0 md:text-2xl gap-1">
               {navItems.map((item) => (
                 <li key={item.id}>
                   <a
