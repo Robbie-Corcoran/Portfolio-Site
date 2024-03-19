@@ -5,7 +5,7 @@ const Projects = () => {
     <>
       <section
         id="projects"
-        className="w-full max-w-screen-xl mx-auto p-4 font-sofia"
+        className="w-full max-w-screen-xl mx-auto p-4 pt-20 -mb-16 font-sofia"
       >
         <h2 className="p-2 text-4xl text-theme-primary font-bold tracking-tight">
           What have I built?

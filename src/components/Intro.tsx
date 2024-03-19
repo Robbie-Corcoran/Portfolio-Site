@@ -1,7 +1,7 @@
 const Intro = () => {
   return (
     <>
-      <div className="font-sofia flex flex-col justify-center items-center p-4 h-screen w-screen bg-theme-black text-theme-text lg:flex lg:mx-auto lg:p-4">
+      <section className="font-sofia flex flex-col justify-center items-center p-4 -mb-16 h-screen w-screen bg-theme-black text-theme-text lg:flex lg:mx-auto lg:p-4">
         <div className="p-3 text-left">
           <h1 className="text-6xl">
             HELLO, I'M
@@ -23,7 +23,7 @@ const Intro = () => {
             <a href="#contact">CONTACT ME</a>
           </button>
         </div>
-      </div>
+      </section>
     </>
   );
 };

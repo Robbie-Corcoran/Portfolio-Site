@@ -85,7 +85,7 @@ const Skills = () => {
     <>
       <section
         id="skills"
-        className="w-full max-w-screen-xl mx-auto p-4 font-sofia"
+        className="w-full max-w-screen-xl mx-auto p-4 pt-20 -mb-16 font-sofia"
       >
         <h1 className="p-2 text-4xl text-theme-primary font-bold tracking-tight">
           What do I work best with?
