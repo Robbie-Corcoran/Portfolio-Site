@@ -20,7 +20,7 @@ const Intro = () => {
             <a href="#skills">SEE MY SKILLS</a>
           </button>
           <button className="rounded-lg bg-theme-text h-12 w-40 py-2 px-3 text-theme-black">
-            <a href="#skills">CONTACT ME</a>
+            <a href="#contact">CONTACT ME</a>
           </button>
         </div>
       </div>

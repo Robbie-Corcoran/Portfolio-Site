@@ -13,15 +13,17 @@ function App() {
 
       {/* <About /> */}
 
-      <Skills />
+      <div className="mt-16">
+        <Skills />
 
-      <Projects />
+        <Projects />
 
-      <Testimonials />
+        <Testimonials />
 
-      <Contact />
+        <Contact />
 
-      <Footer />
+        <Footer />
+      </div>
     </>
   );
 }

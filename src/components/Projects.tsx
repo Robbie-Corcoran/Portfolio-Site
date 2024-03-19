@@ -5,9 +5,9 @@ const Projects = () => {
     <>
       <section
         id="projects"
-        className="w-full max-w-screen-xl mx-auto p-4 md:py-8 place-content-center text-theme-primary font-sofia"
+        className="w-full max-w-screen-xl mx-auto p-4 font-sofia"
       >
-        <h2 className="text-4xl p-2 mt-8 font-bold tracking-tight">
+        <h2 className="p-2 text-4xl text-theme-primary font-bold tracking-tight">
           What have I built?
         </h2>
         <div className="md:grid md:grid-cols-2 md:gap-6 lg:grid-cols-3 ">

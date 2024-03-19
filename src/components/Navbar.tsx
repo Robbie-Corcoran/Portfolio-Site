@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="bg-theme-black text-theme-text w-full fixed top-0 font-sofia">
-        <div className=" max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <div className="flex items-center space-x-3">
             <span className="self-center text-2xl font-semibold whitespace-nowrap">
               Robbie Corcoran
@@ -55,6 +55,7 @@ const Navbar = () => {
                     href={item.href}
                     className="block md:py-2 md:px-3 md:p-0 text-right hover:underline hover:decoration-theme-primary hover:decoration-2"
                     aria-current="page"
+                    onClick={toggleNav}
                   >
                     {item.text}
                   </a>
@@ -67,7 +68,5 @@ const Navbar = () => {
     </>
   );
 };
-
-Navbar.propTypes = {};
 
 export default Navbar;
