@@ -14,7 +14,7 @@ const Navbar = () => {
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <div className="flex items-center space-x-3">
             <span className="self-center text-2xl font-semibold whitespace-nowrap md:text-4xl">
-              Robbie Corcoran
+              <a href="#">Robbie Corcoran</a>
             </span>
           </div>
           <button
