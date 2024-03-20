@@ -22,7 +22,7 @@ const Intro = () => {
             | Just reach out!
           </p>
         </div>
-        <div className="flex flex-col gap-3 text-xl pt-6">
+        <div className="flex flex-col md:flex-row gap-3 text-xl pt-6">
           <button className="border-2 bg-theme-primary rounded-lg border-theme-primary h-12 w-40 py-2 px-3 text-theme-text">
             <a href="#skills">SEE MY SKILLS</a>
           </button>

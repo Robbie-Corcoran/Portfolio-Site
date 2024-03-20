@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="bg-theme-black text-theme-text w-full fixed top-0 font-sofia">
+      <nav className="bg-theme-black text-theme-text w-full fixed top-0 font-sofia z-10">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <div className="flex items-center space-x-3">
             <span className="self-center text-2xl font-semibold whitespace-nowrap md:text-4xl">
