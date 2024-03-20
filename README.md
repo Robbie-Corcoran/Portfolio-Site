@@ -35,6 +35,12 @@ To run this project locally, follow these steps:
    cd portfolio-site
    ```
 
+1. Install dependencies::
+
+   ```bash
+   npm i
+   ```
+
 ## Usage
 
 1. To start the development server, run:
