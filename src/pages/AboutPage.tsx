@@ -1,4 +1,4 @@
-const About = () => {
+const AboutPage = () => {
   return (
     <div className="my-auto">
       <section
@@ -57,4 +57,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutPage;
