@@ -130,21 +130,21 @@ const Skills = () => {
           </ul>
           <div>
             <div
-              className={`p-4 bg-white rounded-lg h-96 md:p-8 lg:h-fit overflow-auto overflow-x-scroll ${
+              className={`bg-white rounded-lg h-96 px-4 py-2 place-content-center lg:h-fit overflow-auto overflow-x-scroll ${
                 activeTab === "frontend" ? "block" : "hidden"
               }`}
               id="frontend"
               role="tabpanel"
               aria-labelledby="frontend-tab"
             >
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-4 place-items-center text-center lg:grid-cols-6">
+              <div className="grid grid-cols-2 gap-4 w-fit mx-auto text-center md:grid-cols-3 lg:grid-cols-6">
                 {frontendSkills?.skills.map((iconName, index) => (
                   <div key={`frontend-${index}`}>
                     <SkillsIcon
+                      key={index}
                       category="frontend"
                       fileName={iconName.toLowerCase()}
                       filePath="skillIcons/frontend"
-                      className=""
                     />
                     <h2 className="text-lg">{iconName}</h2>
                   </div>
@@ -152,14 +152,14 @@ const Skills = () => {
               </div>
             </div>
             <div
-              className={`p-4 bg-white rounded-lg h-96 md:p-8 lg:h-fit overflow-auto overflow-x-scroll ${
+              className={`bg-white rounded-lg h-96 px-4 py-2 place-content-center lg:h-fit overflow-auto overflow-x-scroll ${
                 activeTab === "backend" ? "block" : "hidden"
               }`}
               id="backend"
               role="tabpanel"
               aria-labelledby="backend-tab"
             >
-              <div className="grid grid-cols-2 gap-4 place-items-center text-center lg:grid-cols-4">
+              <div className="grid grid-cols-2 gap-4 gap-x-12 w-fit mx-auto text-center lg:grid-cols-4">
                 {backendSkills?.skills.map((iconName, index) => (
                   <div key={`backend-${index}`}>
                     <SkillsIcon
@@ -174,14 +174,14 @@ const Skills = () => {
               </div>
             </div>
             <div
-              className={`p-4 bg-white rounded-lg h-96 md:p-8 lg:h-fit overflow-auto overflow-x-scroll ${
+              className={`bg-white rounded-lg h-96 px-4 py-2 place-content-center lg:h-fit overflow-auto overflow-x-scroll ${
                 activeTab === "databasing" ? "block" : "hidden"
               }`}
               id="databasing"
               role="tabpanel"
               aria-labelledby="databasing-tab"
             >
-              <div className="grid grid-cols-2 gap-4 place-items-center text-center lg:grid-cols-2 lg:justify-center">
+              <div className="grid grid-cols-2 gap-4 gap-x-12 w-fit mx-auto text-center lg:grid-cols-2 lg:justify-center">
                 {databasingSkills?.skills.map((iconName, index) => (
                   <div key={`databasing-${index}`}>
                     <SkillsIcon
@@ -196,14 +196,14 @@ const Skills = () => {
               </div>
             </div>
             <div
-              className={`p-4 bg-white rounded-lg h-96 md:p-8 lg:h-fit overflow-auto overflow-x-scroll ${
+              className={`bg-white rounded-lg h-96 px-4 py-2 place-content-center lg:h-fit overflow-auto overflow-x-scroll ${
                 activeTab === "cloud-hosting" ? "block" : "hidden"
               }`}
               id="cloud-hosting"
               role="tabpanel"
               aria-labelledby="cloud-hosting-tab"
             >
-              <div className="grid grid-cols-2 gap-4 place-items-center text-center lg:grid-cols-3">
+              <div className="grid grid-cols-2 gap-4 gap-x-12 w-fit mx-auto text-center lg:grid-cols-3">
                 {cloudHostingSkills?.skills.map((iconName, index) => (
                   <div key={`cloud-hosting-${index}`}>
                     <SkillsIcon
@@ -218,14 +218,14 @@ const Skills = () => {
               </div>
             </div>
             <div
-              className={`p-4 bg-white rounded-lg h-96 md:p-8 lg:h-fit overflow-auto overflow-x-scroll ${
+              className={`bg-white rounded-lg h-96 px-4 py-2 place-content-center lg:h-fit overflow-auto overflow-x-scroll ${
                 activeTab === "misc" ? "block" : "hidden"
               }`}
               id="misc"
               role="tabpanel"
               aria-labelledby="misc-tab"
             >
-              <div className="grid grid-cols-2 gap-4 place-items-center text-center lg:grid-cols-3">
+              <div className="grid grid-cols-2 gap-4 gap-x-12 w-fit mx-auto text-center lg:grid-cols-3">
                 {miscSkills?.skills.map((iconName, index) => (
                   <div key={`misc-${index}`}>
                     <SkillsIcon
