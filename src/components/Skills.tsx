@@ -1,5 +1,4 @@
 import { useState } from "react";
-// import SkillsIcon from "./SVGIcon";
 import SkillsTab from "./SkillsTab";
 import SkillsList from "./SkillsList";
 
