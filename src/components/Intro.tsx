@@ -7,7 +7,7 @@ const Intro = () => {
             HELLO, I'M
             <br />
             <span className="text-8xl text-theme-primary font-bold hover:underline hover:decoration-theme-text hover:decoration-4">
-              ROBBIE.
+              TEST.
             </span>
           </h1>
           <h3 className="text-4xl font-light">
