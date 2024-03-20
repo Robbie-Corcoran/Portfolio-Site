@@ -1,11 +1,7 @@
 const About = () => {
   return (
     <div className="my-auto">
-      <section
-        id="about"
-        className="text-theme-primary text-center lg:text-left"
-      >
-        <hr className="w-screen lg:hidden" />
+      <section id="about" className="text-theme-text text-center lg:text-left">
         <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8 lg:max-w-screen-sm">
           <p>
             I use passion to bring together design, development, and

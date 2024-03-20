@@ -85,14 +85,14 @@ const Skills = () => {
     <>
       <section
         id="skills"
-        className="w-full max-w-screen-xl mx-auto p-4 text-theme-primary"
+        className="w-full max-w-screen-xl mx-auto p-4 pt-20 -mb-16 font-sofia"
       >
-        <h1 className="p-2 text-xl font-bold tracking-tight">
-          What do I like to use?
+        <h1 className="p-2 text-4xl text-theme-primary font-bold tracking-tight">
+          What do I work best with?
         </h1>
-        <div className="max-w-sm bg-white border border-theme-primary rounded-lg shadow m-auto md:max-w-md lg:max-w-none">
+        <div className="max-w-sm bg-white border-2 border-theme-border rounded-lg shadow m-auto md:max-w-md lg:max-w-none">
           <ul
-            className="flex flex-wrap border-bottom border-theme-primary rounded-sm shadow text-sm justify-center font-medium text-center text-gray-500 rounded-t-lg"
+            className="flex flex-wrap p-0 bg-theme-black text-theme-text shadow text-lg justify-center font-medium"
             id="defaultTab"
             data-tabs-toggle="#defaultTabContent"
             role="tablist"
