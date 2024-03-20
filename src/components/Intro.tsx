@@ -1,3 +1,5 @@
+import { ReactTyped } from "react-typed";
+
 const Intro = () => {
   return (
     <>
@@ -7,7 +9,12 @@ const Intro = () => {
             HELLO, I'M
             <br />
             <span className="text-8xl text-theme-primary font-bold hover:underline hover:decoration-theme-text hover:decoration-4">
-              ROBBIE.
+              <ReactTyped
+                strings={["ROBBIE!"]}
+                typeSpeed={150}
+                startDelay={800}
+                cursorChar="|"
+              />
             </span>
           </h1>
           <h3 className="text-4xl font-light">
