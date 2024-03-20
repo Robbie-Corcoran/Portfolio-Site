@@ -10,10 +10,10 @@ const Intro = () => {
             <br />
             <span className="text-8xl text-theme-primary font-bold hover:underline hover:decoration-theme-text hover:decoration-4">
               <ReactTyped
-                strings={["ROBBIE."]}
-                typeSpeed={50}
+                strings={["ROBBIE!"]}
+                typeSpeed={150}
                 startDelay={800}
-                fadeOut={true}
+                cursorChar="|"
               />
             </span>
           </h1>
