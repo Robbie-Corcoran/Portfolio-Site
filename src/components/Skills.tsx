@@ -5,8 +5,8 @@ import SkillsList from "./SkillsList";
 type SkillType = {
   category: string;
   skills: string[];
-  numOfMedCols: string;
-  numOfLargeCols: string;
+  mdCols: string;
+  lgCols: string;
 };
 
 const Skills = () => {
@@ -32,8 +32,8 @@ const Skills = () => {
         "WordPress",
         "ExpressionEngine",
       ],
-      numOfMedCols: "3",
-      numOfLargeCols: "6",
+      mdCols: "3",
+      lgCols: "6",
     },
     {
       category: "backend",
@@ -47,20 +47,20 @@ const Skills = () => {
         "JUnit5",
         "REST",
       ],
-      numOfMedCols: "2",
-      numOfLargeCols: "4",
+      mdCols: "2",
+      lgCols: "4",
     },
     {
       category: "databasing",
       skills: ["PostgreSQL", "MongoDB", "SQLite", "Hibernate"],
-      numOfMedCols: "2",
-      numOfLargeCols: "2",
+      mdCols: "2",
+      lgCols: "2",
     },
     {
       category: "cloud-hosting",
       skills: ["Azure", "AWS", "Docker", "Hostinger", "Vercel", "Shopify"],
-      numOfMedCols: "2",
-      numOfLargeCols: "3",
+      mdCols: "2",
+      lgCols: "3",
     },
     {
       category: "misc",
@@ -72,8 +72,8 @@ const Skills = () => {
         "Premiere Pro",
         "JetBrains",
       ],
-      numOfMedCols: "2",
-      numOfLargeCols: "3",
+      mdCols: "2",
+      lgCols: "3",
     },
   ];
 
@@ -112,8 +112,8 @@ const Skills = () => {
                 category={icon.category}
                 skills={icon.skills}
                 activeTab={activeTab}
-                mdCols={icon.numOfMedCols}
-                lgCols={icon.numOfLargeCols}
+                mdCols={icon.mdCols}
+                lgCols={icon.lgCols}
               />
             ))}
           </div>
