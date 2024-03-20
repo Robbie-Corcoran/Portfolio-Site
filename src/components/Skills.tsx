@@ -1,10 +1,13 @@
 import { useState } from "react";
-import SkillsIcon from "./SVGIcon";
+// import SkillsIcon from "./SVGIcon";
 import SkillsTab from "./SkillsTab";
+import SkillsList from "./SkillsList";
 
 type SkillType = {
   category: string;
   skills: string[];
+  numOfMedCols: string;
+  numOfLargeCols: string;
 };
 
 const Skills = () => {
@@ -30,6 +33,8 @@ const Skills = () => {
         "WordPress",
         "ExpressionEngine",
       ],
+      numOfMedCols: "3",
+      numOfLargeCols: "6",
     },
     {
       category: "backend",
@@ -43,14 +48,20 @@ const Skills = () => {
         "JUnit5",
         "REST",
       ],
+      numOfMedCols: "2",
+      numOfLargeCols: "4",
     },
     {
       category: "databasing",
       skills: ["PostgreSQL", "MongoDB", "SQLite", "Hibernate"],
+      numOfMedCols: "2",
+      numOfLargeCols: "2",
     },
     {
       category: "cloud-hosting",
       skills: ["Azure", "AWS", "Docker", "Hostinger", "Vercel", "Shopify"],
+      numOfMedCols: "2",
+      numOfLargeCols: "3",
     },
     {
       category: "misc",
@@ -62,24 +73,10 @@ const Skills = () => {
         "Premiere Pro",
         "JetBrains",
       ],
+      numOfMedCols: "2",
+      numOfLargeCols: "3",
     },
   ];
-
-  const frontendSkills = skillIcons.find(
-    (category) => category.category === "frontend"
-  );
-  const backendSkills = skillIcons.find(
-    (category) => category.category === "backend"
-  );
-  const databasingSkills = skillIcons.find(
-    (category) => category.category === "databasing"
-  );
-  const cloudHostingSkills = skillIcons.find(
-    (category) => category.category === "cloud-hosting"
-  );
-  const miscSkills = skillIcons.find(
-    (category) => category.category === "misc"
-  );
 
   return (
     <>
@@ -97,152 +94,34 @@ const Skills = () => {
             data-tabs-toggle="#defaultTabContent"
             role="tablist"
           >
-            <SkillsTab
-              tabId="frontend"
-              tabName="Frontend"
-              activeTab={activeTab}
-              handleTabClick={handleTabClick}
-            />
-            <SkillsTab
-              tabId="backend"
-              tabName="Backend"
-              activeTab={activeTab}
-              handleTabClick={handleTabClick}
-            />
-            <SkillsTab
-              tabId="databasing"
-              tabName="Databasing"
-              activeTab={activeTab}
-              handleTabClick={handleTabClick}
-            />
-            <SkillsTab
-              tabId="cloud-hosting"
-              tabName="Cloud & Hosting"
-              activeTab={activeTab}
-              handleTabClick={handleTabClick}
-            />
-            <SkillsTab
-              tabId="misc"
-              tabName="Misc"
-              activeTab={activeTab}
-              handleTabClick={handleTabClick}
-            />
+            {skillIcons.map((icon) => (
+              <SkillsTab
+                key={icon.category}
+                tabId={icon.category}
+                tabName={
+                  icon.category.charAt(0).toUpperCase() + icon.category.slice(1)
+                }
+                activeTab={activeTab}
+                handleTabClick={handleTabClick}
+              />
+            ))}
           </ul>
           <div>
-            <div
-              className={`bg-white rounded-lg h-96 px-4 py-2 place-content-center lg:h-fit overflow-auto overflow-x-scroll ${
-                activeTab === "frontend" ? "block" : "hidden"
-              }`}
-              id="frontend"
-              role="tabpanel"
-              aria-labelledby="frontend-tab"
-            >
-              <div className="grid grid-cols-2 gap-4 w-fit mx-auto text-center md:grid-cols-3 lg:grid-cols-6">
-                {frontendSkills?.skills.map((iconName, index) => (
-                  <div key={`frontend-${index}`}>
-                    <SkillsIcon
-                      key={index}
-                      category="frontend"
-                      fileName={iconName.toLowerCase()}
-                      filePath="skillIcons/frontend"
-                    />
-                    <h2 className="text-lg">{iconName}</h2>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div
-              className={`bg-white rounded-lg h-96 px-4 py-2 place-content-center lg:h-fit overflow-auto overflow-x-scroll ${
-                activeTab === "backend" ? "block" : "hidden"
-              }`}
-              id="backend"
-              role="tabpanel"
-              aria-labelledby="backend-tab"
-            >
-              <div className="grid grid-cols-2 gap-4 gap-x-12 w-fit mx-auto text-center lg:grid-cols-4">
-                {backendSkills?.skills.map((iconName, index) => (
-                  <div key={`backend-${index}`}>
-                    <SkillsIcon
-                      key={index}
-                      category="backend"
-                      fileName={iconName.toLowerCase()}
-                      filePath="skillIcons/backend"
-                    />
-                    <h2 className="text-lg">{iconName}</h2>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div
-              className={`bg-white rounded-lg h-96 px-4 py-2 place-content-center lg:h-fit overflow-auto overflow-x-scroll ${
-                activeTab === "databasing" ? "block" : "hidden"
-              }`}
-              id="databasing"
-              role="tabpanel"
-              aria-labelledby="databasing-tab"
-            >
-              <div className="grid grid-cols-2 gap-4 gap-x-12 w-fit mx-auto text-center lg:grid-cols-2 lg:justify-center">
-                {databasingSkills?.skills.map((iconName, index) => (
-                  <div key={`databasing-${index}`}>
-                    <SkillsIcon
-                      key={index}
-                      category="databasing"
-                      fileName={iconName.toLowerCase()}
-                      filePath="skillIcons/databasing"
-                    />
-                    <h2 className="text-lg">{iconName}</h2>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div
-              className={`bg-white rounded-lg h-96 px-4 py-2 place-content-center lg:h-fit overflow-auto overflow-x-scroll ${
-                activeTab === "cloud-hosting" ? "block" : "hidden"
-              }`}
-              id="cloud-hosting"
-              role="tabpanel"
-              aria-labelledby="cloud-hosting-tab"
-            >
-              <div className="grid grid-cols-2 gap-4 gap-x-12 w-fit mx-auto text-center lg:grid-cols-3">
-                {cloudHostingSkills?.skills.map((iconName, index) => (
-                  <div key={`cloud-hosting-${index}`}>
-                    <SkillsIcon
-                      key={index}
-                      category="cloud-hosting"
-                      fileName={iconName.toLowerCase()}
-                      filePath="skillIcons/cloud-hosting"
-                    />
-                    <h2 className="text-lg">{iconName}</h2>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div
-              className={`bg-white rounded-lg h-96 px-4 py-2 place-content-center lg:h-fit overflow-auto overflow-x-scroll ${
-                activeTab === "misc" ? "block" : "hidden"
-              }`}
-              id="misc"
-              role="tabpanel"
-              aria-labelledby="misc-tab"
-            >
-              <div className="grid grid-cols-2 gap-4 gap-x-12 w-fit mx-auto text-center lg:grid-cols-3">
-                {miscSkills?.skills.map((iconName, index) => (
-                  <div key={`misc-${index}`}>
-                    <SkillsIcon
-                      key={index}
-                      category="misc"
-                      fileName={iconName.toLowerCase()}
-                      filePath="skillIcons/misc"
-                    />
-                    <h2 className="text-lg">{iconName}</h2>
-                  </div>
-                ))}
-              </div>
-            </div>
+            {skillIcons.map((icon) => (
+              <SkillsList
+                key={icon.category}
+                category={icon.category}
+                skills={icon.skills}
+                activeTab={activeTab}
+                mdCols={icon.numOfMedCols}
+                lgCols={icon.numOfLargeCols}
+              />
+            ))}
           </div>
         </div>
       </section>
     </>
   );
 };
+
 export default Skills;
