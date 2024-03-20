@@ -13,14 +13,18 @@ const SkillsTab: React.FC<SkillsTabType> = ({
 }) => {
   return (
     <>
-      <li className="me-2">
+      <li className="px-2">
         <button
           id={`${tabId}-tab`}
           type="button"
           role="tab"
           aria-controls={tabId}
           aria-selected={activeTab === tabId}
-          className={`inline-block p-4 focus:underline`}
+          className={`inline-block p-4 hover:underline ${
+            activeTab === tabId
+              ? "underline decoration-theme-primary decoration-2"
+              : ""
+          }`}
           onClick={() => handleTabClick(tabId)}
         >
           {tabName}

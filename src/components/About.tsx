@@ -3,10 +3,12 @@ const About = () => {
     <div className="my-auto">
       <section
         id="about"
-        className="text-theme-primary text-center lg:text-left"
+        className="w-full max-w-screen-xl mx-auto p-4 pt-20 -mb-16 font-sofia"
       >
-        <hr className="w-screen lg:hidden" />
-        <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8 lg:max-w-screen-sm">
+        <h1 className="p-2 text-4xl text-theme-primary font-bold tracking-tight">
+          Want to know more about me?
+        </h1>
+        <div className="max-w-sm bg-white m-auto md:max-w-md lg:max-w-none">
           <p>
             I use passion to bring together design, development, and
             functionality.

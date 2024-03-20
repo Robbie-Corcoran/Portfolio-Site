@@ -2,12 +2,16 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sofia: ["Sofia Sans Condensed", "sans-serif"],
+      },
+    },
     colors: {
       "theme-black": "#020204",
-      "theme-primary": "#3B1F6C",
-      "theme-secondary": "#4C2EA9",
-      "theme-border": "#792C75",
+      "theme-primary": "#2a9df4",
+      "theme-secondary": "#2078BC",
+      "theme-border": "#020204",
       "theme-text": "#FAF9F6",
     },
   },

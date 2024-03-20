@@ -1,4 +1,4 @@
-import About from "./components/About";
+// import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Intro from "./components/Intro";
@@ -9,11 +9,7 @@ import Testimonials from "./components/Testimonials";
 function App() {
   return (
     <>
-      <div className="lg:flex lg:w-full lg:max-w-screen-xl lg:mx-auto lg:p-4 lg:justify-center">
-        <Intro />
-
-        <About />
-      </div>
+      <Intro />
 
       <Skills />
 
@@ -22,6 +18,8 @@ function App() {
       <Testimonials />
 
       <Contact />
+
+      {/* <About /> */}
 
       <Footer />
     </>

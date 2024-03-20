@@ -15,15 +15,17 @@ const ProjectsCard = ({
 }: ProjectsCardType) => {
   return (
     <>
-      <div className="max-w-sm bg-white border border-theme-primary border-t-0 hover:scale-[101%] duration-200 rounded-lg shadow m-auto mb-4 md:max-w-md">
+      <div className="max-w-sm border-2 border-theme-border border-t-0 hover:scale-[101%] duration-200 rounded-lg shadow m-auto mb-4 md:max-w-md">
         <a href={projectURL} target="_blank">
-          <img className="rounded-t-lg" src={previewPath} alt={previewAlt} />
+          <img className="rounded-t-md" src={previewPath} alt={previewAlt} />
         </a>
         <div className="p-5">
           <a href={projectURL} target="_blank">
-            <h5 className="mb-2 text-2xl font-bold tracking-tight">{title}</h5>
+            <h5 className="mb-2 text-2xl font-bold tracking-tight text-theme-black">
+              {title}
+            </h5>
           </a>
-          <p className="mb-3 font-normal h-48 overflow-auto overflow-x-scroll">
+          <p className="mb-3 font-normal h-48 overflow-auto overflow-x-scroll text-theme-black">
             {description}
           </p>
           <button className="border rounded-lg bg-theme-primary text-theme-text ">
