@@ -54,6 +54,7 @@ const Navbar = () => {
                 <li
                   key={item.id}
                   className="block md:py-2 md:px-3 md:p-0 text-right hover:underline hover:decoration-theme-primary hover:decoration-2"
+                  onClick={toggleNav}
                 >
                   {/* <a
                     href={item.href}
@@ -63,7 +64,7 @@ const Navbar = () => {
                   >
                     {item.text}
                   </a> */}
-                  <Link to={`/${item.text}`}>{item.text}</Link>
+                  <Link to={`/${item.href}`}>{item.text}</Link>
                 </li>
               ))}
             </ul>
