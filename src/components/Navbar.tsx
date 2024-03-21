@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { navItems } from "../contants";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [navOpen, setNavOpen] = useState<boolean>(false);
@@ -14,7 +15,7 @@ const Navbar = () => {
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <div className="flex items-center space-x-3">
             <span className="self-center text-2xl font-semibold whitespace-nowrap md:text-4xl">
-              <a href="#">Robbie Corcoran</a>
+              <Link to="/">Robbie Corcoran</Link>
             </span>
           </div>
           <button
@@ -50,15 +51,19 @@ const Navbar = () => {
           >
             <ul className="font-medium flex flex-col pt-1 pr-3 md:p-0 md:flex-row md:space-x-2 md:mt-0 md:border-0 md:text-2xl gap-1">
               {navItems.map((item) => (
-                <li key={item.id}>
-                  <a
+                <li
+                  key={item.id}
+                  className="block md:py-2 md:px-3 md:p-0 text-right hover:underline hover:decoration-theme-primary hover:decoration-2"
+                >
+                  {/* <a
                     href={item.href}
                     className="block md:py-2 md:px-3 md:p-0 text-right hover:underline hover:decoration-theme-primary hover:decoration-2"
                     aria-current="page"
                     onClick={toggleNav}
                   >
                     {item.text}
-                  </a>
+                  </a> */}
+                  <Link to={`/${item.text}`}>{item.text}</Link>
                 </li>
               ))}
             </ul>
