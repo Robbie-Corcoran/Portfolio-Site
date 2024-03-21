@@ -6,7 +6,7 @@ const Contact = () => {
         className="w-full max-w-screen-xl mx-auto p-4 md:py-8 font-sofia"
       >
         <div>
-          <h1 className="text-4xl font-bold tracking-tight text-theme-primary">
+          <h1 className="text-4xl font-bold tracking-tight text-center text-theme-primary">
             Contact Me
           </h1>
           <h2 className="text-center mt-2">

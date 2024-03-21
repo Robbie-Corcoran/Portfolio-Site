@@ -11,7 +11,7 @@ const Intro = () => {
             <span className="text-8xl text-theme-primary font-bold hover:underline hover:decoration-theme-text hover:decoration-4">
               <ReactTyped
                 strings={["ROBBIE"]}
-                typeSpeed={150}
+                typeSpeed={50}
                 startDelay={800}
                 cursorChar="|"
               />

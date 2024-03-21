@@ -5,9 +5,12 @@ const AboutPage = () => {
         id="about"
         className="w-full max-w-screen-xl mx-auto p-4 pt-20 -mb-16 font-sofia"
       >
-        <h1 className="p-2 text-4xl text-theme-primary font-bold tracking-tight">
-          Want to know more about me?
-        </h1>
+        `<div className="max-w-screen-lg mx-auto ">
+          <img src="../about-header.png" alt="" />
+          <h1 className="p-2 text-4xl text-theme-primary font-bold tracking-tight">
+            About Me
+          </h1>
+        </div>`
         <div className="max-w-sm bg-white m-auto md:max-w-md lg:max-w-none">
           <p>
             I use passion to bring together design, development, and
