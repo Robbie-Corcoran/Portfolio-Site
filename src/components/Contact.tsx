@@ -19,7 +19,7 @@ const Contact = () => {
           <div className="flex mt-4 justify-center gap-2">
             {/* Phone */}
             <a
-              href="tel:31630816331"
+              href="tel:+31630816331"
               target="_blank"
               className="mx-2 fill-theme-primary"
             >
@@ -67,7 +67,7 @@ const Contact = () => {
 
             {/* GitHub */}
             <a
-              href="https://github.com/Robbie-Corcoran"
+              href="https://github.com/robbie-corcoran"
               target="_blank"
               className="mx-2 fill-theme-primary"
             >
